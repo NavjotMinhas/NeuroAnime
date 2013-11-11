@@ -1,0 +1,17 @@
+Yahoo! UI Library
+
+The files included here are from the Yahoo! UI Library (YUI)
+and are included under a BSD license.
+
+To mimimize file sizes, the files here are the 'min' versions,
+which have been compressed with JSmin. If you would like to see
+fully formatted source code, including comments, you can replace
+the files here with the full versions, which can be downloaded
+from the YUI section of the Yahoo! Developer Network website.
+
+No modifications are made to the YUI files by the vBulletin
+developers prior to inclusion in vBulletin.
+
+For all information regarding YUI, please visit this page:
+
+http://www.vbulletin.com/go/yui

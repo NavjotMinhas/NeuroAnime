@@ -1,0 +1,763 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # vBulletin 4.1.5 Patch Level 1
+|| # ---------------------------------------------------------------- # ||
+|| # All code in this file is ©2000-2011 vBulletin Solutions Inc.     # ||
+|| # This file may not be redistributed in whole or significant part. # ||
+|| # ---------------- VBULLETIN IS NOT FREE SOFTWARE ---------------- # ||
+|| # http://www.vbulletin.com | http://www.vbulletin.com/license.html # ||
+|| #################################################################### ||
+\*======================================================================*/
+
+/**
+* vBulletin 3 Silver Control Panel CSS
+*/
+
+/* ############################################################################# */
+/* TEXT ELEMENTS */
+
+/* Normal Sized Text */
+body, p, td, tr, ol, ul
+{
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+
+/* Small Sized Text */
+.smallfont, dfn, fieldset, fieldset td, .copyright
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+
+/* Table Title Bars */
+.tcat, .thead, .tfoot, .optiontitle, .navbody, .navbody td, legend, .darkbg, .tfoot td, .logincontrols td
+{
+	font: 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+
+/* Override current font weight and become normal */
+.normal
+{
+	font-weight: normal;
+}
+
+/* Display <dfn> tags as block-level elements */
+dfn
+{
+	display: block;
+}
+
+/* For those times when you need a monospace font */
+.code, .code-g, .code-i, code-c
+{
+	font: 10pt consolas, 'courier new', courier, monospace;
+}
+
+
+/* ############################################################################# */
+/* FORM ELEMENTS */
+
+input, select, textarea, option, optgroup
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+optgroup
+{
+	font-size: 11px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+/* Most form elements appear using this definition */
+textarea, .bginput, input.col-c, input.col-i, input.col-g
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	color: #001F30;
+	background: #FFFFFF;
+	border: solid 1px #90AFC0;
+	scrollbar-base-color: #EEEEEE;
+	scrollbar-arrow-color: #001F30;
+	scrollbar-track-color: #F6F6F6;
+	scrollbar-3dlight-color: #FFFFFF;
+	scrollbar-shadow-color: #90AFC0;
+}
+
+/* Form elements with the background color defined */
+input.bginput, input.col-c, input.col-i, input.col-g
+{
+	padding: 4px;
+}
+
+/* Submit / Important button elements */
+.button, .tfoot input, .logincontrols input
+{
+	font: bold 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.button
+{
+	background: #7D7B7A url("../../cpstyles/vBulletin_3_Silver/cp_button_bg.gif") repeat-x;
+	border: outset 1px;
+	color: #000000;
+}
+
+/* ############################################################################# */
+/* BODY AND TABLE STYLES */
+
+/* set colored scrollbars */
+html
+{
+	scrollbar-base-color: #DDDDDD;
+	scrollbar-track-color: #CCCCCC;
+	scrollbar-arrow-color: #001F30;
+	scrollbar-3dlight-color: #EEEEEE;
+	scrollbar-shadow-color: #999999;
+}
+
+/* Background color and font for the main window */
+body
+{
+	color: #001F30;
+	background: #CCCCCC;
+}
+
+/* Border around tables */
+.tborder
+{
+	border: ridge 4px;
+}
+
+/* Top-level table title rows */
+.tcat
+{
+	color: #000000;
+	background: #AEACB9 url("../../cpstyles/vBulletin_3_Silver/cp_tblhead_bg.gif") repeat-x;
+	border: outset 2px;
+}
+
+/* Links within top-level table title rows */
+.tcat a:link, .tcat a:visited, .tcat a:active
+{
+	color: #000000;
+}
+
+/* Second-level table titles (often used for column headings) */
+td.thead, .thead td
+{
+	font-weight: bold;
+	color: #000000;
+	background: #DEE0E2 url("../../cpstyles/vBulletin_3_Silver/cp_colheader_bg.gif");
+	border: outset 1px;
+	padding: 2px 4px 2px 4px;
+}
+
+/* Links within second-level table titles */
+.thead a:link, .thead a:visited, .thead a:active
+{
+	color: #000000;
+}
+
+/* The area within which the submit button usually resides at the bottom of tables */
+.tfoot
+{
+	color: #001F30;
+	background: #DEE0E2;
+	border: outset 1px;
+}
+
+/* First alternating background color */
+.alt1
+{
+	color: #001F30;
+	background: #EEEEEE;
+}
+
+/* Second alternating background color */
+.alt2
+{
+	color: #001F30;
+	background: #F6F6F6;
+}
+
+/* class used for the login form */
+.logincontrols
+{
+	color: #001F30;
+	background: #DEE0E2;
+	border: outset 1px;
+}
+
+/* status */
+.status
+{
+	color: #001F30;
+	background: #DEE0E2;
+	padding: 5px;
+}
+
+/* Page title banner */
+.pagetitle
+{
+	font-size: 11pt;
+	font-weight: bold;
+	text-align: right;
+	color: #000000;
+	background: #AEACB9 url("../../cpstyles/vBulletin_3_Silver/cp_tblhead_bg.gif") repeat-x top;
+	border: outset 1px;
+	padding: 2px 26px 2px 26px;
+}
+
+/* ############################################################################# */
+/* CUSTOMIZED, INHERITED, GLOBAL / STANDARD COLORS */
+
+/* Global/ Standard elements */
+.col-g, input.col-g, textarea.col-g, .code-g, .col-g a:link, .col-g a:visited, .col-g a:active, .code
+{
+	color: #001F30;
+}
+
+/* Inherited elements */
+.col-i, input.col-i, textarea.col-i, .code-i, .col-i a:link, .col-i a:visited, .col-i a:active
+{
+	color: #FF5500;
+}
+
+/* Customized elements */
+.col-c, input.col-c, textarea.col-c, .code-c, .col-c a:link, .col-c a:visited, .col-c a:active
+{
+	color: #CC0000;
+}
+
+
+/* ############################################################################# */
+/* LINKS */
+
+/* Normal, visited and active links */
+a:link, a:visited, a:active
+{
+	color: #001F60;
+	background: none;
+}
+
+/* Mouse-over (hover) links */
+a:hover, .tcat a:hover, .thead a:hover, .tfoot a:hover
+{
+	color: #FF4400;
+	background: none;
+}
+
+/* ############################################################################# */
+/* TEMPLATE EDITOR AND COLOR KEYS */
+
+/* The row style for each STYLE bar on template.php */
+.stylerow
+{
+	background: #3689A3 url("../../cpstyles/vBulletin_3_Silver/option_name_bg.gif") no-repeat;
+	margin-bottom: 1px;
+}
+
+.stylerow a:link, .stylerow a:visited, .stylerow a:active
+{
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+}
+
+/* Used for the <select> based template editor and color key legends */
+.darkbg
+{
+	color: #000000;
+	background: #FFFFFF;
+}
+
+/* Color for template group text */
+.templategroup
+{
+	color: #000000;
+}
+
+/* In the <select> based template editor, set a background-color for template groups */
+option.templategroup
+{
+	background: #EEEEEE;
+}
+
+/* Color preview buttons on the CSS editor */
+.color_input_container {float:left; display:inline; margin-right:4px}
+.colorpreview
+{
+	font-weight: normal;
+	background: none;
+	border: 1px solid black;
+	width: 40px;
+	height: 21px;
+
+	float:left;
+	display:inline;
+	border-style: inset;
+	border-width: 1px;
+	background: rgb(0, 0, 0) none repeat scroll 0% 0%;
+	-moz-background-clip: -moz-initial;
+	-moz-background-origin:	-moz-initial;
+	-moz-background-inline-policy: -moz-initial;
+}
+
+/* ############################################################################# */
+/* TEMPLATE DIFF VIEWER */
+.diff-unchanged
+{
+	background-color: #dddddd;
+	color: #000000;
+}
+
+.diff-notext
+{
+	background-color: #c0c0c0;
+	color: #000000;
+}
+
+.diff-changed
+{
+	background-color: #f0f060;
+	color: #000000;
+}
+
+.diff-added, .diff-inline-added
+{
+	background-color: #B0F0B0;
+	color: #000000;
+	border: 0 solid #00FF00;
+}
+
+.diff-inline-added-start
+{
+	border-top-width: 1px;
+}
+
+.diff-inline-added-end
+{
+	border-bottom-width: 1px;
+}
+
+.diff-deleted, .diff-inline-deleted
+{
+	background-color: #F0B0B0;
+	color: #000000;
+	border: 0 solid #EB5858;
+}
+
+.diff-inline-deleted-start
+{
+	border-top-width: 1px
+}
+
+.diff-inline-deleted-end
+{
+	border-bottom-width: 1px;
+}
+
+.diff-inline-break
+{
+	border: solid gray;
+	border-width:1px 0;
+}
+
+.diff-linenumber
+{
+	color: #999988;
+	background-color: #EEEEDD;
+	border-bottom: 1px solid #999988;
+	border-right: 1px solid #CCCCCC;
+	vertical-align: top;
+	text-align: center;
+}
+
+.merge-nochange
+{
+	background-color: #dddddd;
+	color: #000000;
+}
+
+.merge-successful
+{
+	background-color: #f0f060;
+	color: #000000;
+}
+
+.merge-conflict
+{
+	background: #F0B0B0;
+	color: #000000;
+}
+
+#compare_inline .merge-conflict
+{
+	background: #F0B0B0 url(../../cpstyles/vBulletin_3_Default/merge_conflict_bg.png) repeat-y;
+	color: #000000;
+	padding-left: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.merge-conflict-row
+{
+	padding-left: 20px;
+	border-bottom: 1px solid #D04040;
+}
+
+.merge-conflict-final-row
+{
+	padding-left: 20px;
+}
+
+.template-text-merged
+{
+	color: #0000C0;
+}
+
+.template-text-conflicted
+{
+	color: #D00000;
+	font-weight: bold;
+}
+
+/* ############################################################################# */
+/* ACCESS MASK EDITOR */
+
+/* Access is granted to forum */
+.am-grant
+{
+	color: #008000;
+
+}
+
+/* Access is denied to forum */
+.am-deny
+{
+	color: #CC0000;
+}
+
+/* ############################################################################# */
+/* MODERATOR LISTING */
+
+/* Moderator was last online today */
+.modtoday
+{
+	color: #001F30;
+}
+
+/* Moderator was last online yesterday */
+.modyesterday
+{
+	color: #008000;
+}
+
+/* Moderator was last online within the last 10 days */
+.modlasttendays
+{
+	color: #0000CD;
+}
+
+/* Moderator has not been on in the last 10 days */
+.modsincetendays
+{
+	color: #FF5500;
+}
+
+/* Moderator has not been on in last 30 days */
+.modsincethirtydays
+{
+	color: #CC0000;
+}
+
+/* ############################################################################# */
+/* LIST ELEMENT TYPES */
+
+/* list elements with a square bullet */
+.lsq
+{
+	list-style-type: square;
+}
+/* list elements with a hollow circle bullet */
+.lci
+{
+	list-style-type: circle;
+}
+/* list elements with a solid circle bullet */
+.ldi
+{
+	list-style-type: disc;
+}
+/* list elements with NO bullet */
+.lno
+{
+	list-style-type: none;
+}
+
+/* ############################################################################# */
+/* MISC */
+
+/* The row style for individual option titles in the vBulletin settings/options editor */
+.optiontitle
+{
+	font-weight: bold;
+	color: #000000;
+	background: #3689A3 url("../../cpstyles/vBulletin_3_Silver/option_name_bg.gif") no-repeat;
+	border: outset 1px;
+}
+.optiontitle a:link, .optiontitle a:visited, .optiontitle a:active
+{
+	color: #FFFFFF;
+}
+
+/* Style for all (Help) links */
+.helplink
+{
+	font-size: 10px;
+	text-decoration: none;
+	cursor: help;
+}
+
+/* Titles for <fieldset> elements */
+legend
+{
+	font-weight: bold;
+	color: #000000;
+}
+
+/* vBulletin copyright text shown at the bottom of most control panel pages */
+a.copyright:link, a.copyright:visited, a.copyright:active
+{
+	text-decoration: none;
+	color: #888888;
+	border-top: dashed 1px #888888;
+	padding: 1px;
+}
+
+/* Add a little style to all <hr /> elements */
+hr
+{
+	border-top: solid 1px #DEE0E2;
+	height: 0px;
+}
+
+/* Usergroup entry for lists in permission editors */
+.usergroups li
+{
+	font: 11px tahoma;
+	list-style-type: disc;
+}
+
+/* todo copy to other styles */
+ul.cbsubgroup
+{
+	margin: 0px;
+	padding: 0px;
+	margin-left: 20px;
+	list-style: none inside;
+}
+
+ul.cbsubgroup li
+{
+	font-style: italic;
+}
+
+.cbsubgroup-trigger img
+{
+	border:none;
+	vertical-align: bottom;
+}
+/* ############################################################################# */
+/* NAV PANEL ELEMENTS */
+
+/* Background color for nav panels and the template editor */
+.navbody, .stylebg
+{
+	color: #000000;
+	background: #CCCCCC url("../../cpstyles/vBulletin_3_Silver/cp_navbody_bg.gif") repeat-x fixed top;
+	scrollbar-base-color: #9D9EA9;
+	scrollbar-arrow-color: #F0F0F6;
+	scrollbar-track-color: #A9AAB2;
+	scrollbar-3dlight-color: #B2B3BF;
+	scrollbar-shadow-color: #777780;
+}
+
+/* Text decoration for all links in nav panel */
+.navbody a:link, .navbody a:visited, .navbody a:active
+{
+	text-decoration: none;
+	color: #000000;
+}
+.navbody a:hover
+{
+	text-decoration: underline;
+	color: #F0F0F6;
+}
+
+/* Text decoration for all links in nav panel */
+.navgroup a:link, .navgroup a:visited, .navgroup a:active, .navgroup a:hover
+{
+	text-decoration: none;
+	color: #000000;
+}
+
+/* Expandable nav group titles */
+.navtitle
+{
+	font-weight: bold;
+	color: #000000;
+	background: #AEACB9 url("../../cpstyles/vBulletin_3_Silver/cp_tblhead_bg.gif") repeat-x;
+	border: solid 2px #666688; /*90AFC0*/
+	padding: 3px;
+	margin-top: 3px;
+	cursor: default;
+}
+
+/* Container for individual nav links */
+.navgroup
+{
+	border: solid 2px #666688;
+	border-width: 0px 2px 1px 2px;
+	margin-bottom: 8px;
+}
+
+/* Individual nav links */
+a.navlink
+{
+	border-bottom: solid 1px #666688;
+	padding: 2px 4px 2px 4px;
+	display: block;
+	outline: 0 none;
+	-moz-outline-style: 0 none;
+}
+
+/* Normal nav link */
+a.navlink:link, a.navlink:visited
+{
+	background: #DDDDE2;
+}
+
+/* Mouse-over nav link  */
+a.navlink:hover
+{
+	background: #F0F0F6;
+}
+
+/* Progress dots for XML import */
+.progress_dots
+{
+	color: yellow;
+	font-weight:bold;
+}
+
+/* ############################################################################# */
+/* Layout Manager */
+.widget_container
+{
+	list-style:none;
+	margin:6px;
+	border: 1px solid black;
+}
+.widget_title
+{
+	background-color:#808080;
+	text-align:center;
+	font: 12px tahoma;
+	height:25px;
+	position:relative;
+}
+.widget_title_primary
+{
+	background-color:#DC143C;
+}
+.widget_title div.title {
+	padding:4px;
+	margin-right:19px;
+	overflow:hidden;
+	white-space:nowrap;
+	_width:60%;
+}
+.widget_title div.closebutton
+{
+	position:absolute;
+	right:2px;
+	top:2px;
+	padding:0;
+	cursor:pointer;
+	border:1px solid white;
+	background-color:black;
+	color:white;
+	width:11px;
+	height:11px;
+	font-size:10px;
+	font-weight:bold;
+	font-family:verdana,geneva,lucida,'lucida grande',arial,helvetica,sans-serif;
+	line-height:0.8;
+	background:none;
+}
+
+.widget_title div.closebutton:hover {
+	background-color:#CC3333;
+}
+.widget_description
+{
+	background-color:#D3D3D3;
+	padding:4px;
+	padding-top:10px;
+	font:12px tahoma;
+	text-align:center;
+	height:40px;
+}
+.widget_description_primary
+{
+	background-color:#F08080;
+}
+.list_no_decoration
+{
+	list-style:none;
+	margin:0px;
+	padding:1px;
+}
+.yui-header, .yui-footer
+{
+	background-color:#BDB76B;
+}
+.yui-panel
+{
+	background-color:#FFFF33;
+}
+.yui-sidebar
+{
+	background-color:#CCCC99;
+}
+
+/* added for cms */
+.section_name
+{
+	border:1px solid #A8B2B8;
+	color: #000000;
+}
+
+#sections {
+	border: 4px ridge #001F30;
+	background: #EEEEEE;
+}
+
+#sections div {
+	padding: 10px;
+}
+
+tr.selected_parent_row td {
+	background: #AEACB9;
+	border: outset 2px;
+}
+
+tr.selected_parent_row td .sectionTitleWrapper a {
+	font-size:16px;
+}
+
+
+/*======================================================================*\
+|| ####################################################################
+|| # Downloaded: 01:57, Mon Sep 12th 2011
+|| # CVS: $RCSfile$ - $Revision: 40651 $
+|| ####################################################################
+\*======================================================================*/

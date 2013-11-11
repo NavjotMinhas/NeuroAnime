@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<product productid="skimlinks" active="1">
+	<title>Skimlinks Plugin</title>
+	<description>Official Skimlinks plugin for vBulletin</description>
+	<version>2.0.7</version>
+	<url>http://skimlinks.me/vbhome</url>
+	<versioncheckurl />
+	<dependencies>
+		<dependency dependencytype="vbulletin" minversion="4.1.0 Beta 1" maxversion="4.2.0 Alpha 1" />
+	</dependencies>
+	<codes>
+		<code version="*">
+			<installcode><![CDATA[echo '<p>The Skimlinks installation must be executed via the install system.</p>
+<p>To continue to the Skimlinks installation, click <a href="../install/upgrade.php?version=skimlinks&amp;only=1">here</a>.';
+die();]]></installcode>
+			<uninstallcode><![CDATA[$db->query_write("DROP TABLE IF EXISTS " . TABLE_PREFIX . "skimlinks");]]></uninstallcode>
+		</code>
+	</codes>
+	<templates>
+		<template name="modifyoptions_skimlinks_vb3" templatetype="template" date="1296471680" username="Skimlinks" version="2.0.7"><![CDATA[<fieldset class="fieldset">
+	<legend>Skimlinks</legend>
+	<table cellpadding="0" cellspacing="$stylevar[formspacer]" border="0" width="100%">
+	<tr>
+		<td>$vboptions[skimlinks_user_disable_description]</td>
+	</tr>
+	<tr> 
+		<td>
+			<div><label><input type="checkbox" name="skimlinks" value="1" tabindex="1" $skimlinks_checked /> $vbphrase[skimlinks_enabled]</label></div>
+		</td>
+	</tr>
+	</table>
+</fieldset>]]></template>
+		<template name="modifyoptions_skimlinks_vb4" templatetype="template" date="1296471518" username="Skimlinks" version="2.0.7"><![CDATA[</div>
+<h3 class="blocksubhead">Skimlinks</h3>
+<div class="section">
+	<fieldset class="blockrow">
+		<ul class="checkradio group rightcol">
+			<li>
+				<label><input type="checkbox" name="skimlinks" value="1" tabindex="1" {vb:raw skimlinks_checked} /> {vb:phrase skimlinks_enabled}</label>
+			</li>
+		</ul>
+		<p class="description">{vb:raw vboptions.skimlinks_user_disable_description}</p>
+	</fieldset>]]></template>
+	</templates>
+	<stylevardfns>
+	</stylevardfns>
+	<stylevars>
+	</stylevars>
+	<plugins>
+		<plugin active="1" executionorder="5">
+			<title>Add Skimlinks Classes to PostBit</title>
+			<hookname>postbit_display_complete</hookname>
+			<phpcode><![CDATA[require(DIR . '/packages/skimlinks/hooks/postbit_display_complete.php');]]></phpcode>
+		</plugin>
+		<plugin active="1" executionorder="5">
+			<title>Add Skimlinks Option to Edit Options Form</title>
+			<hookname>profile_editoptions_start</hookname>
+			<phpcode><![CDATA[require_once(DIR . '/packages/skimlinks/hooks/profile_editoptions_start.php');]]></phpcode>
+		</plugin>
+		<plugin active="1" executionorder="5">
+			<title>Update Skimlinks Preference</title>
+			<hookname>profile_updateoptions</hookname>
+			<phpcode><![CDATA[require_once(DIR . '/packages/skimlinks/hooks/profile_updateoptions.php');]]></phpcode>
+		</plugin>
+		<plugin active="1" executionorder="5">
+			<title>Add Skimlinks JavaScript to footer template</title>
+			<hookname>showthread_complete</hookname>
+			<phpcode><![CDATA[require_once(DIR . '/packages/skimlinks/hooks/showthread_complete.php');]]></phpcode>
+		</plugin>
+		<plugin active="1" executionorder="5">
+			<title>Extend User DataManager</title>
+			<hookname>userdata_start</hookname>
+			<phpcode><![CDATA[require_once(DIR . '/packages/skimlinks/hooks/userdata_start.php');]]></phpcode>
+		</plugin>
+	</plugins>
+	<phrases>
+		<phrasetype name="Control Panel Global" fieldname="cpglobal">
+			<phrase name="skimlinks_advanced_options" date="1296465305" username="Skimlinks" version="3.0"><![CDATA[Skimlinks Advanced Options]]></phrase>
+			<phrase name="skimlinks_dissociate_account" date="1297119991" username="Skimlinks" version="3.0"><![CDATA[Dissociate account]]></phrase>
+			<phrase name="skimlinks_gloabal_is_off" date="1297119994" username="Skimlinks" version="3.0"><![CDATA[&nbsp;<br /><strong>Skimlinks is currently <span style="color: #ff0000;">disabled</span> for your forum.</strong><br /><br />To enable Skimlinks, please turn it <strong>On</strong> in the Global Options below.<br /><br /><strong>Note:</strong> The configuration settings that you have chosen will be respected when Skimlinks is enabled.<br />&nbsp;]]></phrase>
+			<phrase name="skimlinks_global_acc_details" date="1297120010" username="Skimlinks" version="3.0"><![CDATA[Account Details]]></phrase>
+			<phrase name="skimlinks_global_acc_info" date="1297120009" username="Skimlinks" version="3.0"><![CDATA[Account Information]]></phrase>
+			<phrase name="skimlinks_global_active_acc" date="1297120022" username="Skimlinks" version="3.0"><![CDATA[Activate account]]></phrase>
+			<phrase name="skimlinks_global_active_fail" date="1297120011" username="Skimlinks" version="3.0"><![CDATA[<strong>Account Activation Unsuccessful</strong>]]></phrase>
+			<phrase name="skimlinks_global_active_new_acc" date="1297120019" username="Skimlinks" version="3.0"><![CDATA[Activate new account]]></phrase>
+			<phrase name="skimlinks_global_active_succ" date="1297120017" username="Skimlinks" version="3.0"><![CDATA[<strong>Account Activation Successful</strong><br /><br />
+					Congratulations, we've activated your Skimlinks account and your Publisher ID has been associated with this plugin.<br /><br />
+					<strong>Please click Finish to complete the Activation process.</strong><br />&nbsp;<br />
+					You will shortly receive a welcome email to the address that you supplied containing your Skimlinks account and login details. If you don't receive this email in the
+					next few minutes, please check your junk email folder. If it still isn't there, please contact <a href="mailto:support@skimlinks.com">support@skimlinks.com</a>.<br /><br />]]></phrase>
+			<phrase name="skimlinks_global_alert_js" date="1297120027" username="Skimlinks" version="3.0"><![CDATA[To finalize your account dissociation, please press OK and then the Save button on the Global Options page of the Skimlinks plugin.\n\nOnce this is done, your Skimlinks account association will be removed from this plugin.\n\nSkimlinks products will no longer be active on your site.\n\nTo associate a different Skimlinks account, re-associate the same account, or activate a new account with this plugin, please use the appropriate buttons in the Setup section.]]></phrase>
+			<phrase name="skimlinks_global_all_req" date="1297120001" username="Skimlinks" version="3.0"><![CDATA[All fields are required]]></phrase>
+			<phrase name="skimlinks_global_ass_acc" date="1297120023" username="Skimlinks" version="3.0"><![CDATA[Associate account]]></phrase>
+			<phrase name="skimlinks_global_ass_ext_acc" date="1297120020" username="Skimlinks" version="3.0"><![CDATA[Associate existing account]]></phrase>
+			<phrase name="skimlinks_global_ass_note" date="1297120018" username="Skimlinks" version="3.0"><![CDATA[To associate your Skimlinks Account with this plugin, all you need to provide is the <strong>email address associated with your Skimlinks Account</strong> and your forum domain. We will do all the rest!]]></phrase>
+			<phrase name="skimlinks_global_ass_succ" date="1297120018" username="Skimlinks" version="3.0"><![CDATA[<strong>Account Association Successful</strong><br /><br />
+					Congratulations, we've successfully associated your Skimlinks account and your Publisher ID has been added to this plugin.<br />&nbsp;<br />
+					<strong>Please click Finish to complete the Association process.</strong><br />&nbsp;<br />]]></phrase>
+			<phrase name="skimlinks_global_back" date="1297119997" username="Skimlinks" version="3.0"><![CDATA[Back]]></phrase>
+			<phrase name="skimlinks_global_cancel" date="1297120008" username="Skimlinks" version="3.0"><![CDATA[Cancel]]></phrase>
+			<phrase name="skimlinks_global_confirm" date="1297120000" username="Skimlinks" version="3.0"><![CDATA[Confirm]]></phrase>
+			<phrase name="skimlinks_global_confirm_ass" date="1297120014" username="Skimlinks" version="3.0"><![CDATA[Please confirm that the details you have provided are correct to ensure that we can associate your Skimlinks account straightaway.]]></phrase>
+			<phrase name="skimlinks_global_confirm_js" date="1297120026" username="Skimlinks" version="3.0"><![CDATA[Please confirm you would like to remove the association between your Skimlinks account and this plugin. By doing so, all Skimlinks products will be immediately disabled on this forum.\n\nYou can always associate a different Skimlinks account, re-associate the same account, or activate a new account from the Setup section in this plugin.]]></phrase>
+			<phrase name="skimlinks_global_confirm_note" date="1297120016" username="Skimlinks" version="3.0"><![CDATA[Please confirm that the details you have provided are correct before we create your account. The email address that you provide
+						will become your Skimlinks account username and where we send all your account information, details and updates, so please especially make sure this field is correct.]]></phrase>
+			<phrase name="skimlinks_global_create_acc" date="1297120025" username="Skimlinks" version="3.0"><![CDATA[Create account]]></phrase>
+			<phrase name="skimlinks_global_domain" date="1297120007" username="Skimlinks" version="3.0"><![CDATA[Domain]]></phrase>
+			<phrase name="skimlinks_global_edit_info" date="1297120010" username="Skimlinks" version="3.0"><![CDATA[Edit information]]></phrase>
+			<phrase name="skimlinks_global_email" date="1297120006" username="Skimlinks" version="3.0"><![CDATA[Email address]]></phrase>
+			<phrase name="skimlinks_global_enable" date="1297119993" username="Skimlinks" version="3.0"><![CDATA[Globally enable the Skimlinks technology on your forum here:]]></phrase>
+			<phrase name="skimlinks_global_enter" date="1297119999" username="Skimlinks" version="3.0"><![CDATA[Enter]]></phrase>
+			<phrase name="skimlinks_global_finish" date="1297120024" username="Skimlinks" version="3.0"><![CDATA[Finish]]></phrase>
+			<phrase name="skimlinks_global_is_free" date="1297120002" username="Skimlinks" version="3.0"><![CDATA[Signing up to Skimlinks is free, takes hardly any time, and allows you to start earning through the Skimlinks technology straightaway. We only need the basics to get you started. Fill in the form below and your Skimlinks account will be immediately activated and ready to go.]]></phrase>
+			<phrase name="skimlinks_global_name" date="1297120005" username="Skimlinks" version="3.0"><![CDATA[Full Name]]></phrase>
+			<phrase name="skimlinks_global_ness_acc" date="1297120003" username="Skimlinks" version="3.0"><![CDATA[This field is necessary to activate your account]]></phrase>
+			<phrase name="skimlinks_global_ness_ass" date="1297120013" username="Skimlinks" version="3.0"><![CDATA[This field is necessary to associate your account]]></phrase>
+			<phrase name="skimlinks_global_new_setup" date="1297119998" username="Skimlinks" version="3.0"><![CDATA[If you are new to Skimlinks, simply Activate your new account. If you are already a Skimlinks publisher, Associate your existing account with this plugin.]]></phrase>
+			<phrase name="skimlinks_global_next_step" date="1297120021" username="Skimlinks" version="3.0"><![CDATA[Next step]]></phrase>
+			<phrase name="skimlinks_global_return_to" date="1297120012" username="Skimlinks" version="3.0"><![CDATA[Return to Global Options]]></phrase>
+			<phrase name="skimlinks_global_setup" date="1297119996" username="Skimlinks" version="3.0"><![CDATA[Setup]]></phrase>
+			<phrase name="skimlinks_global_status" date="1297119995" username="Skimlinks" version="3.0"><![CDATA[Setup - Status]]></phrase>
+			<phrase name="skimlinks_global_tos_note" date="1297120015" username="Skimlinks" version="3.0"><![CDATA[<small style="display: block; margin: 8px 0;"><strong>Note:</strong>
+						By activating your Skimlinks account, you are agreeing to abide by the Skimlinks <a href="http://skimlinks.com/terms/vbulletin" target="_blank">Terms of Service</a>. This contract will be between you and Skimlinks. You will be able to
+						track your site's Skimlinks revenue by logging into your Skimlinks account, and revenues generated by the use of Skimlinks will be issued to the associated Skimlinks account.
+						The details you provide here will be sent to Skimlinks and your account immediately activated.
+						<br /><br />Please add <a href="mailto:support@skimlinks.com">support@skimlinks.com</a> to your email safe list as all email contact
+						from Skimlinks, including your account information and login, will come from this address.</small>]]></phrase>
+			<phrase name="skimlinks_global_valid_email" date="1297120004" username="Skimlinks" version="3.0"><![CDATA[Please enter a valid email address]]></phrase>
+			<phrase name="skimlinks_global_website_info" date="1297119999" username="Skimlinks" version="3.0"><![CDATA[Website Information]]></phrase>
+			<phrase name="skimlinks_plugin" date="1289661418" username="Skimlinks" version="2.3.1"><![CDATA[Skimlinks Plugin]]></phrase>
+			<phrase name="skimlinks_product_level_options" date="1289861985" username="Skimlinks" version="3.0"><![CDATA[Product Level Options]]></phrase>
+			<phrase name="skimlinks_product_level_options_description" date="1297119990" username="Skimlinks" version="3.0"><![CDATA[You can control the activation of SkimLinks and SkimWords products in various ways, including by usergroups, sections of your forum, age of threads, and allowing users to control the activation of products themselves.
+			<br />Please visit the Advanced Options page from the menu on the left to view and configure these options.]]></phrase>
+			<phrase name="skimlinks_to_enable_products" date="1297119992" username="Skimlinks" version="3.0"><![CDATA[To enable and setup specific Skimlinks products, please visit your <a href="https://accounts.skimlinks.com/settings" target="_blank">Skimlinks Publisher Interface</a>.<br />From there you can further configure your Skimlinks account and settings, view detailed traffic and revenue reports. All revenue earned will be issued to your Skimlinks account.]]></phrase>
+		</phrasetype>
+		<phrasetype name="Control Panel Home Pages" fieldname="cphome">
+			<phrase name="skimlinks_global_options" date="1289747463" username="Skimlinks" version="2.3.1"><![CDATA[Skimlinks Global Options]]></phrase>
+			<phrase name="skimlinks_options" date="1289750854" username="Skimlinks" version="2.3.1"><![CDATA[SkimLinks Options]]></phrase>
+			<phrase name="skimwords_options" date="1289750860" username="Skimlinks" version="2.3.1"><![CDATA[SkimWords Options]]></phrase>
+		</phrasetype>
+		<phrasetype name="Control Panel Options" fieldname="cpoption">
+			<phrase name="allow_users_to_disable_skimlinks" date="1289747694" username="Skimlinks" version="2.3.1"><![CDATA[Allow Users to Disable Skimlinks]]></phrase>
+			<phrase name="skimlinks_activate_in_all_threads" date="1296466530" username="Skimlinks" version="3.0"><![CDATA[All threads]]></phrase>
+			<phrase name="skimlinks_activate_in_only_threads_last_post_older_than" date="1296466574" username="Skimlinks" version="3.0"><![CDATA[Only threads whose last post is older than:]]></phrase>
+			<phrase name="skimlinks_activate_products" date="1296465902" username="Skimlinks" version="3.0"><![CDATA[Activate Skimlinks products...]]></phrase>
+			<phrase name="skimlinks_activate_products_within_these_forums" date="1296466105" username="Skimlinks" version="3.0"><![CDATA[Activate Skimlinks products within these forums:]]></phrase>
+			<phrase name="skimlinks_activate_skimlinks_in" date="1296466277" username="Skimlinks" version="3.0"><![CDATA[Activate SkimLinks in...]]></phrase>
+			<phrase name="skimlinks_activate_skimwords_in" date="1296466292" username="Skimlinks" version="3.0"><![CDATA[Activate SkimWords in...]]></phrase>
+			<phrase name="skimlinks_active_in_forums" date="1289750745" username="Skimlinks" version="2.3.1"><![CDATA[SkimLinks will be active within the following forums:]]></phrase>
+			<phrase name="skimlinks_active_usergroups" date="1289750792" username="Skimlinks" version="2.3.1"><![CDATA[SkimLinks will be active for viewing users in the following usergroups:]]></phrase>
+			<phrase name="skimlinks_advanced_options_help" date="1296465606" username="Skimlinks" version="3.0"><![CDATA[<b>SkimLinks</b> will automatically convert links to merchants (eBay, Amazon, Bestbuy etc.)
+that forum users have added to affiliate links when clicked.
+If a sale is made, you earn a commission.
+This is virtually invisible to your forum users (a small redirect when tracking is added),
+so it is recommended to be enabled for <b>all</b> usergroups and forums.<br />
+<br />
+<b>SkimWords</b> will automatically convert product references in posts into shopping links.
+Since SkimWords adds links where there weren't any before, it is visible to your end users.
+However, it is well-targeted and never adds too many links to the page.
+For the best revenue opportunity it is recommended to be enabled for <b>all</b> usergroups and forums.<br />
+<br />
+You may hide SkimLinks and SkimWords features from visitors belonging to specific usergroups, disable it for entire forums, by the age of threads, and allow your users to control the activation of products.<br />
+Note that if a user belongs to <em>any</em> usergroup that has SkimLinks or SkimWords disabled, this will disable SkimLinks or SkimWords for them regardless of their membership of any groups that may have SkimLinks or SkimWords enabled.<br />
+<br />
+<b>Note</b>: Please ensure SkimLinks and SkimWords are enabled in your <a href="https://accounts.skimlinks.com/settings" target="_blank">Skimlinks Publisher Interface</a>.]]></phrase>
+			<phrase name="skimlinks_days" date="1296466605" username="Skimlinks" version="3.0"><![CDATA[days]]></phrase>
+			<phrase name="skimlinks_enabled" date="1289663332" username="Skimlinks" version="2.3.1"><![CDATA[Enable Skimlinks]]></phrase>
+			<phrase name="skimlinks_for_visitors_in_these_usergroups" date="1296465963" username="Skimlinks" version="3.0"><![CDATA[For visitors in these usergroups:]]></phrase>
+			<phrase name="skimlinks_global_settings_description" date="1289751798" username="Skimlinks" version="2.3.1"><![CDATA[If you have selected 'On' and your publisher ID is present, Skimlinks will be enabled on your forum!]]></phrase>
+			<phrase name="skimlinks_in_posts_by_these_usergroups" date="1296466010" username="Skimlinks" version="3.0"><![CDATA[In posts made by these usergroups:]]></phrase>
+			<phrase name="skimlinks_options_description" date="1289751815" username="Skimlinks" version="2.3.1"><![CDATA[SkimLinks will automatically convert links to merchants (eBay, Amazon, Bestbuy etc.)
+that forum users have added to affiliate links when clicked.
+If a sale is made, you earn a commission.
+This is virtually invisible to your forum users (a small redirect when tracking is added),
+so it is recommended to be enabled for <b>all</b> usergroups and forums.<br />
+<br />
+You may hide SkimLinks features from visitors belonging to specific usergroups, or disable it for entire forums.
+Note that if a user belongs to <i>any</i> usergroup that has SkimLinks disabled, this will disable SkimLinks for them regardless of
+their membership of any groups that may have SkimLinks enabled.<br />
+<br />
+<b>Note</b>: You must ensure SkimLinks is enabled in your <a href="https://accounts.skimlinks.com/settings" target="_blanks">publisher admin settings page</a>.]]></phrase>
+			<phrase name="skimlinks_options_hint" date="1296465482" username="Skimlinks" version="3.0"><![CDATA[You can control the activation of SkimLinks and SkimWords products in various ways including by Usergroups,  sections of your Forum, age of Threads, and allowing Users to control the activation of products themselves.<br />Please visit the Advanced Settings page from the menu on the left to view and configure these options.]]></phrase>
+			<phrase name="skimlinks_plugin_description" date="1289751884" username="Skimlinks" version="2.3.1"><![CDATA[<a href="http://skimlinks.me/vbhome" target="_blank">Skimlinks</a> is a simple and easy monetization technology for your forum, available in two products:<br /><br /><strong>&#8226; SkimLinks</strong> automatically converts existing retailer URLs in your posts into affiliate links on-the-fly.<br /><br /><strong>&#8226; SkimWords</strong> turns product references in your content into links to the best performing retailer for that product.<br /><br />We work with over 12,000 retailers from around the world, rewarding you for the role your forum plays in creating and informing purchase intent.<br />Find out more about <a href="http://skimlinks.com/video" target="_blank">how Skimlinks works</a>, or <a href="http://skimlinks.me/vbcontact" target="_blank">Contact us</a> if you have any questions.<br /><br />Use this panel to enable Skimlinks quickly on your vBulletin forum and configure when it appears to your users.]]></phrase>
+			<phrase name="skimlinks_product_activation_based_on_age_of_thread" date="1296466210" username="Skimlinks" version="3.0"><![CDATA[Limit Skimlinks product activation based on age of thread]]></phrase>
+			<phrase name="skimlinks_products_will_be_active_in_these_usergroups" date="1296465825" username="Skimlinks" version="3.0"><![CDATA[Activate products for visitors in these usergroups:]]></phrase>
+			<phrase name="skimlinks_products_will_be_active_posts_by_these_usergroups" date="1296465867" username="Skimlinks" version="3.0"><![CDATA[Activate products for posts made by these usergroups:]]></phrase>
+			<phrase name="skimlinks_pub_id" date="1289663481" username="Skimlinks" version="2.3.1"><![CDATA[Skimlinks publisher ID]]></phrase>
+			<phrase name="skimlinks_time_limit_note" date="1296466696" username="Skimlinks" version="3.0"><![CDATA[<strong>Note:</strong> These settings are executed after, but fully respect and are in addition to,
+any settings in the <em>Usergroups</em> and <em>Forums</em> sections above.
+For example, if you have chosen to deactivate SkimWords for Moderators and only have SkimWords active on
+posts older than one day, any posts by Moderators over one day old are still excluded.]]></phrase>
+			<phrase name="skimlinks_user_disable_explain_text_dfn" date="1296467761" username="Skimlinks" version="3.0"><![CDATA[This is the text that will be displayed to your users when this option is fully enabled, explaining what Skimlinks is and that they can choose to disable it if they so wish.<br />
+<br />
+<strong>Note</strong>: the text included is suggested, but is fully editable to fit your needs.]]></phrase>
+			<phrase name="skimlinks_user_disable_explain_text_label" date="1289747787" username="Skimlinks" version="2.3.1"><![CDATA[Explanatory text to use for this option: ]]></phrase>
+			<phrase name="skimwords_active_in_forums" date="1289750838" username="Skimlinks" version="2.3.1"><![CDATA[SkimWords will be active within the following forums:]]></phrase>
+			<phrase name="skimwords_active_usergroups" date="1289750846" username="Skimlinks" version="2.3.1"><![CDATA[SkimWords will be active for viewing users in the following usergroups:]]></phrase>
+			<phrase name="skimwords_options_description" date="1289751845" username="Skimlinks" version="2.3.1"><![CDATA[SkimWords will automatically convert product references in posts into shopping links. Since SkimWords adds links where there weren't any before, it is visible to your end users. However, it is well-targeted and never adds too many links to the page. For the best revenue opportunity is is recommended to be enabled for <b>all</b> usergroups and forums.<br />
+<br />
+You may hide SkimWords features from visitors belonging to specific usergroups, or disable it for entire forums.
+Note that if a user belongs to <i>any</i> usergroup that has SkimWords disabled, this will disable SkimWords for them regardless of
+their membership of any groups that may have SkimWords enabled.<br />
+<br />
+<b>Note</b>: You must ensure SkimWords is enabled in your <a href="https://accounts.skimlinks.com/settings" target="_blanks">publisher admin settings page</a>.]]></phrase>
+			<phrase name="users_can_disable_skimlinks" date="1289747737" username="Skimlinks" version="2.3.1"><![CDATA[Users can choose to disable Skimlinks]]></phrase>
+		</phrasetype>
+		<phrasetype name="User Tools (global)" fieldname="user">
+			<phrase name="skimlinks_enabled" date="1289786348" username="Skimlinks" version="3.0"><![CDATA[Skimlinks Enabled]]></phrase>
+		</phrasetype>
+		<phrasetype name="vBulletin Settings" fieldname="vbsettings">
+			<phrase name="setting_skimlinks_allow_user_disable_desc" date="1289750583" username="Skimlinks" version="2.3.1"><![CDATA[If you enable this, users will be able to disable the SkimLinks system themselves via their settings.]]></phrase>
+			<phrase name="setting_skimlinks_allow_user_disable_title" date="1289750594" username="Skimlinks" version="2.3.1"><![CDATA[Allow Users to Disable SkimLinks]]></phrase>
+			<phrase name="setting_skimlinks_disable_forums_desc" date="1289750603" username="Skimlinks" version="2.3.1"><![CDATA[Forum IDs listed here will not show SkimLinks. (JSON)]]></phrase>
+			<phrase name="setting_skimlinks_disable_forums_title" date="1289750612" username="Skimlinks" version="2.3.1"><![CDATA[Disable SkimLinks in Forums]]></phrase>
+			<phrase name="setting_skimlinks_disable_groups_desc" date="1289750625" username="Skimlinks" version="2.3.1"><![CDATA[Usergroup IDs listed here will not see SkimLinks. (JSON)]]></phrase>
+			<phrase name="setting_skimlinks_disable_groups_parse_desc" date="1289750638" username="Skimlinks" version="2.3.1"><![CDATA[Usergroup IDs listed here will not have their posted links processed by SkimLinks. (JSON)]]></phrase>
+			<phrase name="setting_skimlinks_disable_groups_parse_title" date="1289750772" username="Skimlinks" version="2.3.1"><![CDATA[Prevent 'SkimLinking' of Links Posted by Usergroups]]></phrase>
+			<phrase name="setting_skimlinks_disable_groups_title" date="1289750646" username="Skimlinks" version="2.3.1"><![CDATA[Hide SkimLinks from Usergroups]]></phrase>
+			<phrase name="setting_skimlinks_enabled_desc" date="1289664353" username="Skimlinks" version="2.3.1"><![CDATA[I want to run Skimlinks products on this forum]]></phrase>
+			<phrase name="setting_skimlinks_enabled_title" date="1289750663" username="Skimlinks" version="2.3.1"><![CDATA[Skimlinks Enabled]]></phrase>
+			<phrase name="setting_skimlinks_pub_id_desc" date="1289664320" username="Skimlinks" version="2.3.1"><![CDATA[Enter your Skimlinks Publisher ID here.<br />
+<a href="http://skimlinks.com/?menu=login&amp;return=domainlist" target="_blank">Get my publisher ID</a>]]></phrase>
+			<phrase name="setting_skimlinks_pub_id_title" date="1289664320" username="Skimlinks" version="2.3.1"><![CDATA[Skimlinks Publisher ID]]></phrase>
+			<phrase name="setting_skimlinks_salt_desc" date="1297298431" username="freddie" version="2.0.7"><![CDATA[Skimlinks Salt]]></phrase>
+			<phrase name="setting_skimlinks_salt_title" date="1297298431" username="freddie" version="2.0.7"><![CDATA[Skimlinks Salt]]></phrase>
+			<phrase name="setting_skimlinks_thread_age_limit_desc" date="1296427642" username="Skimlinks" version="3.0"><![CDATA[Activate SkimLinks only in threads whose last post is older than this many days.]]></phrase>
+			<phrase name="setting_skimlinks_thread_age_limit_title" date="1296427642" username="Skimlinks" version="3.0"><![CDATA[SkimLinks Thread Age Limit]]></phrase>
+			<phrase name="setting_skimlinks_user_disable_description_desc" date="1296466861" username="Skimlinks" version="3.0"><![CDATA[This is the text that will be displayed to your users when this option is fully enabled, explaining what SkimLinks is and that they can choose to disable it if they so wish. (<strong>Note</strong>: the text included is suggested, but is fully editable to fit your needs.)]]></phrase>
+			<phrase name="setting_skimlinks_user_disable_description_title" date="1296466861" username="Skimlinks" version="3.0"><![CDATA[Description Text for Skimlinks User Disable Option]]></phrase>
+			<phrase name="setting_skimwords_disable_forums_desc" date="1289750682" username="Skimlinks" version="2.3.1"><![CDATA[Forum IDs listed here will not show SkimWords. (JSON)]]></phrase>
+			<phrase name="setting_skimwords_disable_forums_title" date="1289750692" username="Skimlinks" version="2.3.1"><![CDATA[Disable SkimWords in Forums]]></phrase>
+			<phrase name="setting_skimwords_disable_groups_desc" date="1289750699" username="Skimlinks" version="2.3.1"><![CDATA[Usergroup IDs listed here will not see SkimWords. (JSON)]]></phrase>
+			<phrase name="setting_skimwords_disable_groups_parse_desc" date="1289750709" username="Skimlinks" version="2.3.1"><![CDATA[Usergroup IDs listed here will not have their posts 'Skimmed' for product names by SkimWords. (JSON)]]></phrase>
+			<phrase name="setting_skimwords_disable_groups_parse_title" date="1289750725" username="Skimlinks" version="2.3.1"><![CDATA[Prevent 'SkimWording' of Links Posted by Usergroups]]></phrase>
+			<phrase name="setting_skimwords_disable_groups_title" date="1289750756" username="Skimlinks" version="2.3.1"><![CDATA[Hide SkimWords from Usergroups]]></phrase>
+			<phrase name="setting_skimwords_thread_age_limit_desc" date="1296427459" username="Skimlinks" version="3.0"><![CDATA[Activate SkimWords only in threads whose last post is older than this many days.]]></phrase>
+			<phrase name="setting_skimwords_thread_age_limit_title" date="1296427459" username="Skimlinks" version="3.0"><![CDATA[SkimWords Thread Age Limit]]></phrase>
+		</phrasetype>
+	</phrases>
+	<options>
+		<settinggroup name="version" displayorder="0">
+			<setting varname="skimlinks_enabled" displayorder="20010">
+				<datatype>boolean</datatype>
+				<optioncode>yesno</optioncode>
+				<defaultvalue>0</defaultvalue>
+			</setting>
+			<setting varname="skimlinks_pub_id" displayorder="20020">
+				<datatype>free</datatype>
+			</setting>
+			<setting varname="skimlinks_allow_user_disable" displayorder="20030">
+				<datatype>boolean</datatype>
+				<optioncode>yesno</optioncode>
+				<defaultvalue>0</defaultvalue>
+			</setting>
+			<setting varname="skimlinks_user_disable_description" displayorder="20040">
+				<datatype>free</datatype>
+				<optioncode>textarea</optioncode>
+				<defaultvalue><![CDATA[We use a product called Skimlinks to help us pay the bills for this forum. If you don't want these links to be enabled while you browse the site, you may disable the system here.]]></defaultvalue>
+			</setting>
+			<setting varname="skimlinks_disable_groups" displayorder="20050">
+				<datatype>free</datatype>
+				<defaultvalue><![CDATA[[]]]></defaultvalue>
+			</setting>
+			<setting varname="skimlinks_disable_groups_parse" displayorder="20060">
+				<datatype>free</datatype>
+				<defaultvalue><![CDATA[[]]]></defaultvalue>
+			</setting>
+			<setting varname="skimlinks_disable_forums" displayorder="20070">
+				<datatype>free</datatype>
+				<defaultvalue><![CDATA[[]]]></defaultvalue>
+			</setting>
+			<setting varname="skimwords_disable_groups" displayorder="20080">
+				<datatype>free</datatype>
+				<defaultvalue><![CDATA[[]]]></defaultvalue>
+			</setting>
+			<setting varname="skimwords_disable_groups_parse" displayorder="20090">
+				<datatype>free</datatype>
+				<defaultvalue><![CDATA[[]]]></defaultvalue>
+			</setting>
+			<setting varname="skimwords_disable_forums" displayorder="20100">
+				<datatype>free</datatype>
+				<defaultvalue><![CDATA[[]]]></defaultvalue>
+			</setting>
+			<setting varname="skimlinks_thread_age_limit" displayorder="20110">
+				<datatype>number</datatype>
+				<defaultvalue>0</defaultvalue>
+			</setting>
+			<setting varname="skimwords_thread_age_limit" displayorder="20120">
+				<datatype>number</datatype>
+				<defaultvalue>0</defaultvalue>
+			</setting>
+			<setting varname="skimlinks_salt" displayorder="20300">
+				<datatype>free</datatype>
+			</setting>
+		</settinggroup>
+	</options>
+	<helptopics>
+	</helptopics>
+	<cronentries>
+	</cronentries>
+	<faqentries>
+	</faqentries>
+</product>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<css product="vbcms">
+	<rollup name="cms-rollup.css">
+		<template>tagcloud.css</template>
+		<template>overlay.css</template>
+		<template>lightbox.css</template>
+		<template>postbit-lite.css</template>
+		<template>postlist.css</template>
+		<template>vbcms.css</template>
+		<template>widgets.css</template>
+	</rollup>
+</css>

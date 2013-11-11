@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<navgroups product="vbulletin" master="true">
+
+	<navgroup phrase="settings" permissions="canadminsettings" hr="true" displayorder="10">
+
+		<navoption displayorder="10">
+			<phrase>options</phrase>
+			<link>options.php?null=0</link>
+		</navoption>
+
+		<navoption displayorder="20">
+			<phrase>search_type</phrase>
+			<link>options.php?do=searchtype</link>
+		</navoption>
+
+		<navoption displayorder="30">
+			<phrase>human_verification_manager</phrase>
+			<link>verify.php</link>
+		</navoption>
+
+		<navoption displayorder="40">
+			<phrase>social_bookmarking_manager</phrase>
+			<link>bookmarksite.php?do=modify</link>
+		</navoption>
+
+		<navoption debug="1" link="help.php?do=manage&amp;script=NOSCRIPT" displayorder="50">
+			<phrase>admin_help_manager</phrase>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup debug="1" phrase="rebuild" permissions="canadminsettings" hr="true" displayorder="11">
+
+		<navoption displayorder="10">
+			<phrase>rebuild_bitfields</phrase>
+			<link>index.php?do=buildbitfields</link>
+		</navoption>
+
+		<navoption displayorder="20">
+			<phrase>rebuild_video_bbcode</phrase>
+			<link>index.php?do=buildvideo</link>
+		</navoption>
+
+		<navoption displayorder="30">
+			<phrase>rebuild_style_information</phrase>
+			<link>template.php?do=rebuild&amp;goto=index.php</link>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="advertising" permissions="canadminads" displayorder="19">
+
+		<navoption displayorder="20">
+			<phrase>manage_ads</phrase>
+			<link>ad.php</link>
+		</navoption>
+
+		<navoption displayorder="30">
+			<phrase>add_new_ad</phrase>
+			<link>ad.php?do=locate</link>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="styles_and_templates" permissions="canadminstyles" displayorder="20">
+
+		<navoption displayorder="10">
+			<phrase>style_manager</phrase>
+			<link>template.php?do=modify</link>
+		</navoption>
+
+		<navoption displayorder="20">
+			<phrase>style_generator</phrase>
+			<link>template.php?do=stylegenerator</link>
+		</navoption>
+
+		<navoption displayorder="30">
+			<phrase>search_in_templates</phrase>
+			<link>template.php?do=search</link>
+		</navoption>
+
+		<navoption displayorder="40">
+			<phrase>replacement_variable_manager</phrase>
+			<link>replacement.php?do=modify</link>
+		</navoption>
+
+		<navoption displayorder="50">
+			<phrase>download_upload_styles</phrase>
+			<link>template.php?do=files</link>
+		</navoption>
+
+		<navoption displayorder="60">
+			<phrase>find_updated_templates</phrase>
+			<link>template.php?do=findupdates</link>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="languages_and_phrases" permissions="canadminlanguages" displayorder="30">
+
+		<navoption displayorder="10">
+			<phrase>language_manager</phrase>
+			<link>language.php?do=modify</link>
+		</navoption>
+
+		<navoption link="phrase.php?do=modify&amp;fieldname=global" displayorder="20">
+			<phrase>phrase_manager</phrase>
+		</navoption>
+
+		<navoption displayorder="30">
+			<phrase>search_in_phrases</phrase>
+			<link>phrase.php?do=search</link>
+		</navoption>
+
+		<navoption displayorder="40">
+			<phrase>download_upload_languages</phrase>
+			<link>language.php?do=files</link>
+		</navoption>
+
+		<navoption displayorder="50">
+			<phrase>find_updated_phrases</phrase>
+			<link>phrase.php?do=findupdates</link>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="faq" permissions="canadminfaq" hr="true" displayorder="40">
+
+		<navoption displayorder="10">
+			<phrase>faq_manager</phrase>
+			<link>faq.php?null=0</link>
+		</navoption>
+
+		<navoption displayorder="20">
+			<phrase>add_new_faq_item</phrase>
+			<link>faq.php?do=add</link>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="notices" permissions="canadminnotices" displayorder="45">
+
+		<navoption displayorder="10">
+			<phrase>notices_manager</phrase>
+			<link>notice.php?do=modify</link>
+		</navoption>
+
+		<navoption displayorder="20">
+			<phrase>add_new_notice</phrase>
+			<link>notice.php?do=add</link>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="announcements" displayorder="50">
+
+		<navoption displayorder="10">
+			<phrase>announcement_manager</phrase>
+			<link>announcement.php?do=modify</link>
+		</navoption>
+
+		<navoption displayorder="20">
+			<phrase>post_new_announcement</phrase>
+			<link>announcement.php?do=add</link>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="forums_and_moderators" permissions="canadminforums" hr="true" displayorder="60">
+
+		<navoption displayorder="10">
+			<phrase>forum_manager</phrase>
+			<link>forum.php?do=modify</link>
+		</navoption>
+
+		<navoption displayorder="20">
+			<phrase>add_new_forum</phrase>
+			<link>forum.php?do=add</link>
+		</navoption>
+
+		<navoption displayorder="30">
+			<phrase>forum_permissions</phrase>
+			<link>forumpermission.php?do=modify</link>
+		</navoption>
+
+		<navoption displayorder="40">
+			<phrase>show_all_moderators</phrase>
+			<link>moderator.php?do=showlist</link>
+		</navoption>
+
+		<navoption displayorder="50">
+			<phrase>view_permissions</phrase>
+			<link>resources.php</link>
+		</navoption>
+
+		<navoption displayorder="60">
+			<phrase>thread_prefixes</phrase>
+			<link>prefix.php</link>
+		</navoption>
+
+		<navoption displayorder="70" permissions="canadminblocks">
+			<phrase>forum_blocks</phrase>
+			<link>block.php</link>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="calendars" permissions="canadmincalendars" hr="true" displayorder="70">
+
+		<navoption displayorder="10">
+			<phrase>calendar_manager</phrase>
+			<link>admincalendar.php?do=modify</link>
+		</navoption>
+
+		<navoption displayorder="20">
+			<phrase>add_new_calendar</phrase>
+			<link>admincalendar.php?do=add</link>
+		</navoption>
+
+		<navoption displayorder="30">
+			<phrase>calendar_permissions</phrase>
+			<link>calendarpermission.php?do=modify</link>
+		</navoption>
+
+		<navoption displayorder="40">
+			<phrase>holiday_manager</phrase>
+			<link>admincalendar.php?do=modifyholiday</link>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="threads_and_posts" permissions="canadminthreads" displayorder="80">
+
+		<navoption displayorder="10">
+			<phrase>prune</phrase>
+			<link>thread.php?do=prune</link>
+		</navoption>
+
+		<navoption displayorder="20">
+			<phrase>move</phrase>
+			<link>thread.php?do=move</link>
+		</navoption>
+
+		<navoption displayorder="30">
+			<phrase>unsubscribe</phrase>
+			<link>thread.php?do=unsubscribe</link>
+		</navoption>
+
+		<navoption displayorder="40">
+			<phrase>strip_poll</phrase>
+			<link>thread.php?do=killpoll</link>
+		</navoption>
+
+		<navoption displayorder="50">
+			<phrase>who_voted</phrase>
+			<link>thread.php?do=votes</link>
+		</navoption>
+
+		<navoption displayorder="70">
+			<phrase>prune_post_edit_history</phrase>
+			<link>thread.php?do=pruneedit</link>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="thread_prefixes" permissions="canadminforums" displayorder="85">
+
+		<navoption displayorder="10">
+			<phrase>thread_prefix_manager</phrase>
+			<link>prefix.php</link>
+		</navoption>
+
+		<navoption displayorder="20">
+			<phrase>add_new_prefix_set</phrase>
+			<link>prefix.php?do=addset</link>
+		</navoption>
+
+		<navoption displayorder="30">
+			<phrase>duplicate_permissions</phrase>
+			<link>prefix.php?do=duplicate</link>
+		</navoption>
+
+
+	</navgroup>
+
+	<navgroup phrase="moderation" displayorder="90">
+
+		<navoption displayorder="10">
+			<phrase>moderate_threads</phrase>
+			<link>../{$vbulletin->config[Misc][modcpdir]}/moderate.php?do=posts</link>
+		</navoption>
+
+		<navoption displayorder="20">
+			<phrase>moderate_posts</phrase>
+			<link>../{$vbulletin->config[Misc][modcpdir]}/moderate.php?do=posts#posts</link>
+		</navoption>
+
+		<navoption displayorder="30">
+			<phrase>moderate_attachments</phrase>
+			<link>../{$vbulletin->config[Misc][modcpdir]}/moderate.php?do=attachments</link>
+		</navoption>
+
+		<navoption displayorder="40">
+			<phrase>moderate_events</phrase>
+			<link>../{$vbulletin->config[Misc][modcpdir]}/moderate.php?do=events</link>
+		</navoption>
+
+		<navoption displayorder="50">
+			<phrase>moderate_visitor_messages</phrase>
+			<link>../{$vbulletin->config[Misc][modcpdir]}/moderate.php?do=messages</link>
+		</navoption>
+
+		<navoption displayorder="60">
+			<phrase>moderate_users</phrase>
+			<link>user.php?do=moderate</link>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="attachments" permissions="canadminthreads" hr="true" displayorder="100">
+
+		<navoption displayorder="10">
+			<phrase>attachment_manager</phrase>
+			<link>attachment.php?do=types</link>
+		</navoption>
+
+		<navoption displayorder="20">
+			<phrase>attachment_permissions</phrase>
+			<link>attachmentpermission.php</link>
+		</navoption>
+
+		<navoption displayorder="30">
+			<phrase>search</phrase>
+			<link>attachment.php?do=intro</link>
+		</navoption>
+
+		<navoption displayorder="40">
+			<phrase>moderate_attachments</phrase>
+			<link>../{$vbulletin->config[Misc][modcpdir]}/moderate.php?do=attachments</link>
+		</navoption>
+
+		<navoption displayorder="50">
+			<phrase>attachment_statistics</phrase>
+			<link>attachment.php?do=stats</link>
+		</navoption>
+
+		<navoption displayorder="60">
+			<phrase>attachment_storage_type</phrase>
+			<link>attachment.php?do=storage</link>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="users" permissions="canadminusers" displayorder="110">
+
+		<navoption displayorder="10">
+			<phrase>add_new_user</phrase>
+			<link>user.php?do=add</link>
+		</navoption>
+
+		<navoption displayorder="20">
+			<phrase>search_for_users</phrase>
+			<link>user.php?do=modify</link>
+		</navoption>
+
+		<navoption displayorder="30">
+			<phrase>merge_users</phrase>
+			<link>usertools.php?do=merge</link>
+		</navoption>
+
+		<navoption displayorder="40">
+			<phrase>ban_user</phrase>
+			<link>../{$vbulletin->config[Misc][modcpdir]}/banning.php?do=banuser</link>
+		</navoption>
+
+		<navoption displayorder="50">
+			<phrase>prune_users</phrase>
+			<link>user.php?do=prune</link>
+		</navoption>
+
+		<navoption displayorder="60">
+			<phrase>private_message_statistics</phrase>
+			<link>usertools.php?do=pmstats</link>
+		</navoption>
+
+		<navoption displayorder="70">
+			<phrase>referrals</phrase>
+			<link>usertools.php?do=referrers</link>
+		</navoption>
+
+		<navoption displayorder="80">
+			<phrase>search_ip_addresses</phrase>
+			<link>usertools.php?do=doips</link>
+		</navoption>
+
+		<navoption displayorder="90">
+			<phrase>view_banned_users</phrase>
+			<link>../{$vbulletin->config[Misc][modcpdir]}/banning.php?do=modify</link>
+		</navoption>
+
+		<navoption displayorder="100">
+			<phrase>send_email_to_users</phrase>
+			<link>email.php?do=start</link>
+		</navoption>
+
+		<navoption displayorder="110">
+			<phrase>generate_mailing_list</phrase>
+			<link>email.php?do=genlist</link>
+		</navoption>
+
+		<navoption displayorder="115">
+			<phrase>check_vulnerable_passwords</phrase>
+			<link>passwordcheck.php</link>
+		</navoption>
+
+		<navoption displayorder="120">
+			<phrase>access_masks</phrase>
+			<link>accessmask.php?do=modify</link>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="usergroups" permissions="canadminpermissions" displayorder="120">
+
+		<navoption displayorder="10">
+			<phrase>usergroup_manager</phrase>
+			<link>usergroup.php?do=modify</link>
+		</navoption>
+
+		<navoption displayorder="20">
+			<phrase>add_new_usergroup</phrase>
+			<link>usergroup.php?do=add</link>
+		</navoption>
+
+		<navoption displayorder="30">
+			<phrase>join_requests</phrase>
+			<link>usergroup.php?do=viewjoinrequests</link>
+		</navoption>
+
+		<navoption displayorder="40">
+			<phrase>promotions</phrase>
+			<link>usergroup.php?do=modifypromotion</link>
+		</navoption>
+
+		<navoption displayorder="50">
+			<phrase>forum_permissions</phrase>
+			<link>forumpermission.php?do=modify</link>
+		</navoption>
+
+		<navoption displayorder="60">
+			<phrase>administrator_permissions</phrase>
+			<link>adminpermissions.php?do=modify</link>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="social_groups" permissions="canadminthreads" displayorder="121">
+
+		<navoption displayorder="10">
+			<phrase>search_social_groups</phrase>
+			<link>socialgroups.php?do=search</link>
+		</navoption>
+
+		<navoption displayorder="20">
+			<phrase>social_group_categories</phrase>
+			<link>socialgroups.php?do=categories</link>
+		</navoption>
+
+		<navoption displayorder="30">
+			<phrase>add_new_social_group_category</phrase>
+			<link>socialgroups.php?do=editcategory</link>
+		</navoption>
+
+		<navoption displayorder="40">
+			<phrase>social_group_icon_storage_type</phrase>
+			<link>socialgroup_icon.php</link>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="user_infractions" permissions="canadminusers" displayorder="125">
+
+		<navoption displayorder="10">
+			<phrase>user_infraction_manager</phrase>
+			<link>admininfraction.php?do=modify</link>
+		</navoption>
+
+		<navoption displayorder="20">
+			<phrase>add_new_user_infraction_level</phrase>
+			<link>admininfraction.php?do=editlevel</link>
+		</navoption>
+
+		<navoption displayorder="30">
+			<phrase>add_new_user_infraction_group</phrase>
+			<link>admininfraction.php?do=editgroup</link>
+		</navoption>
+
+		<navoption displayorder="40">
+			<phrase>add_new_automatic_ban</phrase>
+			<link>admininfraction.php?do=editbangroup</link>
+		</navoption>
+
+		<navoption displayorder="50">
+			<phrase>view_infractions</phrase>
+			<link>admininfraction.php?do=list</link>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="user_profile_fields" permissions="canadminusers" displayorder="130">
+
+		<navoption displayorder="10">
+			<phrase>user_profile_field_manager</phrase>
+			<link>profilefield.php?do=modify</link>
+		</navoption>
+
+		<navoption displayorder="20">
+			<phrase>add_new_user_profile_field</phrase>
+			<link>profilefield.php?do=add</link>
+		</navoption>
+
+		<navoption displayorder="30">
+			<phrase>user_profile_field_categories</phrase>
+			<link>profilefield.php?do=modifycats</link>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="user_ranks" permissions="canadminusers" displayorder="140">
+
+		<navoption displayorder="10">
+			<phrase>user_rank_manager</phrase>
+			<link>ranks.php?do=modify</link>
+		</navoption>
+
+		<navoption displayorder="20">
+			<phrase>add_new_user_rank</phrase>
+			<link>ranks.php?do=add</link>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="user_reputations" permissions="canadminusers" displayorder="150">
+
+		<navoption displayorder="10">
+			<phrase>user_reputation_manager</phrase>
+			<link>adminreputation.php?do=modify</link>
+		</navoption>
+
+		<navoption displayorder="20">
+			<phrase>add_new_user_reputation</phrase>
+			<link>adminreputation.php?do=add</link>
+		</navoption>
+
+		<navoption displayorder="30">
+			<phrase>view_reputation_comments</phrase>
+			<link>adminreputation.php?do=list</link>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="user_titles" permissions="canadminusers" displayorder="160">
+
+		<navoption displayorder="10">
+			<phrase>user_title_manager</phrase>
+			<link>usertitle.php?do=modify</link>
+		</navoption>
+
+		<navoption displayorder="20">
+			<phrase>add_new_user_title</phrase>
+			<link>usertitle.php?do=add</link>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="email_tools" permissions="canadminusers"  displayorder="165">
+
+		<navoption displayorder="10">
+			<phrase>verticalresponse</phrase>
+			<link>http://www.verticalresponse.com/vbulletin/</link>
+		</navoption>
+
+		<navoption displayorder="20">
+			<phrase>upload_list</phrase>
+			<link>verticalresponse.php?do=upload</link>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="paid_subscriptions" permissions="canadminusers"  hr="true" displayorder="170">
+
+		<navoption displayorder="10">
+			<phrase>subscription_manager</phrase>
+			<link>subscriptions.php?do=modify</link>
+		</navoption>
+
+		<navoption displayorder="20">
+			<phrase>add_new_subscription</phrase>
+			<link>subscriptions.php?do=add</link>
+		</navoption>
+
+		<navoption displayorder="30">
+			<phrase>transaction_log</phrase>
+			<link>subscriptions.php?do=transactions&amp;type=log</link>
+		</navoption>
+
+		<navoption displayorder="40">
+			<phrase>transaction_stats</phrase>
+			<link>subscriptions.php?do=transactions&amp;type=stats</link>
+		</navoption>
+
+		<navoption displayorder="50">
+			<phrase>subscription_permissions</phrase>
+			<link>subscriptionpermission.php?do=modify</link>
+		</navoption>
+
+		<navoption displayorder="60">
+			<phrase>paymentapi_manager</phrase>
+			<link>subscriptions.php?do=api</link>
+		</navoption>
+
+		<navoption debug="1" displayorder="70">
+			<phrase>add_paymentapi</phrase>
+			<link>subscriptions.php?do=apiadd</link>
+		</navoption>
+
+		<navoption displayorder="80">
+			<phrase>test_communication</phrase>
+			<link>diagnostic.php?do=payments</link>
+		</navoption>
+
+	</navgroup>
+
+
+	<navgroup phrase="tagging" permissions="canadmintags" hr='true' displayorder="175">
+		<navoption displayorder="10">
+			<phrase>tags</phrase>
+			<link>tag.php</link>
+		</navoption>
+	</navgroup>
+
+	<navgroup phrase="avatars" permissions="canadminimages" displayorder="180">
+
+		<navoption link="image.php?do=modify&amp;table=avatar" displayorder="10">
+			<phrase>avatar_manager</phrase>
+		</navoption>
+
+		<navoption link="image.php?do=add&amp;table=avatar" displayorder="20">
+			<phrase>add_new_avatars</phrase>
+		</navoption>
+
+		<navoption link="image.php?do=upload&amp;table=avatar" displayorder="30">
+			<phrase>upload_avatar</phrase>
+		</navoption>
+
+		<navoption link="avatar.php?do=storage" displayorder="40">
+			<phrase>userpic_storage_type</phrase>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="post_icons" permissions="canadminimages" displayorder="190">
+
+		<navoption link="image.php?do=modify&amp;table=icon" displayorder="10">
+			<phrase>post_icon_manager</phrase>
+		</navoption>
+
+		<navoption link="image.php?do=add&amp;table=icon" displayorder="20">
+			<phrase>add_new_post_icon</phrase>
+		</navoption>
+
+		<navoption link="image.php?do=upload&amp;table=icon" displayorder="30">
+			<phrase>upload_post_icon</phrase>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="smilies" permissions="canadminimages" displayorder="200">
+
+		<navoption link="image.php?do=modify&amp;table=smilie" displayorder="10">
+			<phrase>smilie_manager</phrase>
+		</navoption>
+
+		<navoption link="image.php?do=add&amp;table=smilie" displayorder="20">
+			<phrase>add_new_smilie</phrase>
+		</navoption>
+
+		<navoption link="image.php?do=upload&amp;table=smilie" displayorder="30">
+			<phrase>upload_smilie</phrase>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="custom_bb_codes" permissions="canadminbbcodes" hr="true" displayorder="210">
+
+		<navoption displayorder="10">
+			<phrase>bb_code_manager</phrase>
+			<link>bbcode.php?do=modify</link>
+		</navoption>
+
+		<navoption displayorder="20">
+			<phrase>add_new_bb_code</phrase>
+			<link>bbcode.php?do=add</link>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="rss_feeds" permissions="canadmincron" displayorder="215">
+
+		<navoption displayorder="10">
+			<phrase>rss_feed_manager</phrase>
+			<text>RSS Feed Manager</text>
+			<link>rssposter.php</link>
+		</navoption>
+
+		<navoption displayorder="20">
+			<phrase>add_new_rss_feed</phrase>
+			<text>Add New RSS Feed</text>
+			<link>rssposter.php?do=edit</link>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="scheduled_tasks" permissions="canadmincron" displayorder="220">
+
+		<navoption displayorder="10">
+			<phrase>scheduled_task_manager</phrase>
+			<link>cronadmin.php?do=modify</link>
+		</navoption>
+
+		<navoption displayorder="20">
+			<phrase>add_new_scheduled_task</phrase>
+			<link>cronadmin.php?do=edit</link>
+		</navoption>
+
+		<navoption displayorder="30">
+			<phrase>scheduled_task_log</phrase>
+			<link>cronlog.php?do=choose</link>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="plugins_products" permissions="canadminplugins" displayorder="230">
+
+		<navoption displayorder="10">
+			<phrase>manage_products</phrase>
+			<link>plugin.php?do=product</link>
+		</navoption>
+
+		<navoption displayorder="20">
+			<phrase>plugin_manager</phrase>
+			<link>plugin.php?do=modify</link>
+		</navoption>
+
+		<navoption displayorder="30">
+			<phrase>add_new_plugin</phrase>
+			<link>plugin.php?do=add</link>
+		</navoption>
+
+		<navoption displayorder="40">
+			<phrase>download_upload_plugins</phrase>
+			<link>plugin.php?do=files</link>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="statistics_and_logs" displayorder="240">
+
+		<navoption displayorder="10">
+			<phrase>statistics</phrase>
+			<link>stats.php?do=index</link>
+		</navoption>
+
+		<navoption displayorder="20">
+			<phrase>control_panel_log</phrase>
+			<link>adminlog.php?do=choose</link>
+		</navoption>
+
+		<navoption displayorder="30">
+			<phrase>moderator_log</phrase>
+			<link>modlog.php?do=choose</link>
+		</navoption>
+
+		<navoption displayorder="40">
+			<phrase>scheduled_task_log</phrase>
+			<link>cronlog.php?do=choose</link>
+		</navoption>
+
+		<navoption displayorder="50">
+			<phrase>log_manager</phrase>
+			<link>adminlog.php?do=logfiles</link>
+		</navoption>
+
+		<navoption displayorder="60">
+			<phrase>transaction_log</phrase>
+			<link>subscriptions.php?do=transactions&amp;type=log</link>
+		</navoption>
+
+		<navoption displayorder="70">
+			<phrase>transaction_stats</phrase>
+			<link>subscriptions.php?do=transactions&amp;type=stats</link>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="maintenance" permissions="canadminmaintain" hr="true" displayorder="250">
+
+		<navoption displayorder="20">
+			<phrase>repair_optimize_tables</phrase>
+			<link>repair.php?do=list</link>
+		</navoption>
+
+		<navoption displayorder="30">
+			<phrase>update_counters</phrase>
+			<link>misc.php?do=chooser</link>
+		</navoption>
+
+		<navoption displayorder="40">
+			<phrase>diagnostics</phrase>
+			<link>diagnostic.php?do=list</link>
+		</navoption>
+
+		<navoption displayorder="50">
+			<phrase>execute_sql_query</phrase>
+			<link>queries.php?do=modify</link>
+		</navoption>
+
+		<navoption displayorder="60">
+			<phrase>view_php_info</phrase>
+			<link>index.php?do=phpinfo</link>
+		</navoption>
+
+	</navgroup>
+
+	<navgroup phrase="xml_sitemap" permissions="cansitemap" hr="true" displayorder="270">
+
+		<navoption displayorder="10">
+			<phrase>manage_content_priority</phrase>
+			<link>sitemap.php</link>
+		</navoption>
+
+		<navoption displayorder="20">
+			<phrase>rebuild_sitemap</phrase>
+			<link>sitemap.php?do=buildsitemap</link>
+		</navoption>
+	</navgroup>
+
+	<navgroup phrase="api" hr="true" displayorder="280">
+
+		<navoption displayorder="10">
+			<phrase>api_key</phrase>
+			<link>api.php</link>
+		</navoption>
+
+		<navoption displayorder="20">
+			<phrase>api_log</phrase>
+			<link>apilog.php?do=choose</link>
+		</navoption>
+
+		<navoption displayorder="30">
+			<phrase>api_stats</phrase>
+			<link>apistats.php?do=index</link>
+		</navoption>
+
+	</navgroup>
+
+</navgroups>

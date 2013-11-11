@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ad_locations product="vbulletin">
+	<locationgroup key="archive" displayorder="10">
+		<location key="above_content1">
+			<cp_width>197</cp_width>
+			<cp_height>164</cp_height>
+			<cp_xpos>39</cp_xpos>
+			<cp_ypos>56</cp_ypos>
+		</location>
+		<location key="above_content2">
+			<cp_width>196</cp_width>
+			<cp_height>164</cp_height>
+			<cp_xpos>264</cp_xpos>
+			<cp_ypos>56</cp_ypos>
+		</location>
+		<location key="below_content">
+			<cp_width>474</cp_width>
+			<cp_height>60</cp_height>
+			<cp_xpos>13</cp_xpos>
+			<cp_ypos>347</cp_ypos>
+		</location>
+	</locationgroup>
+	<locationgroup key="board" displayorder="20">
+		<location key="after_forums">
+			<cp_width>446</cp_width>
+			<cp_height>38</cp_height>
+			<cp_xpos>27</cp_xpos>
+			<cp_ypos>276</cp_ypos>
+		</location>
+		<location key="below_whats_going_on">
+			<cp_width>446</cp_width>
+			<cp_height>38</cp_height>
+			<cp_xpos>27</cp_xpos>
+			<cp_ypos>400</cp_ypos>
+		</location>
+	</locationgroup>
+	<locationgroup key="forum" displayorder="30">
+		<location key="below_threadlist">
+			<cp_width>411</cp_width>
+			<cp_height>51</cp_height>
+			<cp_xpos>44</cp_xpos>
+			<cp_ypos>364</cp_ypos>
+		</location>
+	</locationgroup>
+	<locationgroup key="global" displayorder="60">
+		<location key="header1">
+			<cp_width>133</cp_width>
+			<cp_height>35</cp_height>
+			<cp_xpos>138</cp_xpos>
+			<cp_ypos>3</cp_ypos>
+		</location>
+		<location key="header2">
+			<cp_width>133</cp_width>
+			<cp_height>35</cp_height>
+			<cp_xpos>284</cp_xpos>
+			<cp_ypos>3</cp_ypos>
+		</location>
+		<location key="below_navbar">
+			<cp_width>411</cp_width>
+			<cp_height>52</cp_height>
+			<cp_xpos>44</cp_xpos>
+			<cp_ypos>93</cp_ypos>
+		</location>
+		<location key="above_footer">
+			<cp_width>411</cp_width>
+			<cp_height>51</cp_height>
+			<cp_xpos>44</cp_xpos>
+			<cp_ypos>409</cp_ypos>
+		</location>
+	</locationgroup>
+	<locationgroup key="thread" displayorder="50">
+		<location key="first_post_content">
+			<cp_width>142</cp_width>
+			<cp_height>142</cp_height>
+			<cp_xpos>320</cp_xpos>
+			<cp_ypos>185</cp_ypos>
+		</location>
+		<location key="last_post_content">
+			<cp_width>142</cp_width>
+			<cp_height>142</cp_height>
+			<cp_xpos>320</cp_xpos>
+			<cp_ypos>413</cp_ypos>
+		</location>
+	</locationgroup>
+</ad_locations>

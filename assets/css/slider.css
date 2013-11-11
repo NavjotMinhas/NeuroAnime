@@ -1,0 +1,46 @@
+.clear {
+	clear:both
+}
+#gallery {
+	position:relative;
+	height:278px;
+	font-size:11px;
+}
+#gallery a {
+	float:left;
+	position:absolute;
+}
+#gallery a img {
+	border:none;
+}
+#gallery a.show {
+	z-index:500
+}
+#gallery .caption {
+	z-index:600;
+	background-color:#000;
+	color:#ffffff;
+	height:100px;
+	width:100%;
+	position:absolute;
+	bottom:0;
+}
+#gallery .caption .content {
+	margin:5px
+}
+#gallery .caption .content h3 {
+	margin:0;
+	padding:0;
+	color:#1DCCEF;
+	font-family: Calibri;
+	font-size: 1.5em;
+	font-weight:bold;
+	border-bottom: solid #8bcaf5 1px;
+	text-shadow: #2f3430 1px 1px 1px;
+	padding-left: 8px;
+	padding-bottom: 3px;
+	margin-bottom: 4px;
+}
+#slideWrapper{
+	margin-left:30px;
+}

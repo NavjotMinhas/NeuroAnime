@@ -1,0 +1,89 @@
+		div.description {
+			color: #FFFFFF;
+			height:160px;
+			font-family: Calibri;
+			font-size:12px;
+		}
+		div.result {
+			border-bottom-color: #FFF;
+			border-bottom-style: solid;
+			border-bottom-width: 1px;
+			margin-bottom: 10px;
+			margin-left:auto;
+			margin-right:auto;
+			padding: 5px;
+			width: 800px;
+			
+		}
+		img.clip {
+			float:left;
+			height: 140px;
+			width: 100px;
+			margin-right: 20px;
+		}
+		div#searchBar {
+			background-color: #282626;
+			border: solid #484848 1px;
+			height:60px;
+			margin-bottom:10px;
+			margin-left:30px;
+			margin-right:30px;
+			padding-left:10px;
+			padding-right:10px;
+		}
+		div#searchBar a {
+			color:#999;
+			display:block;
+			float:left;
+			width:30px;
+		}
+		div#searchBar a:hover {
+			text-decoration: underline;
+			width:30px;
+		}
+		div#searchBar div {
+			color:#FFF;
+	     	font-size: 14px;
+	     	margin-bottom: 7px;
+		}
+		input.searchBox {
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+			margin-top: 5px;
+			background-color: #fafade;
+			border-style: solid;
+			border-color: #074b4b;
+			border-width: 1px;
+			height:18px;
+		}
+		div.description a:active {
+    		color: #FFFFFF;
+    		text-decoration: none;
+		}
+	
+		div.description a:link {
+   			text-decoration: none;
+		}
+		div.description a {
+    		color: #999999;
+    		font-family: Calibri;
+    		font-size: 1.4em;
+		}
+		div.description a.genreLink{
+			color: #FFFFFF;
+			font-size: 12px;
+		}
+		div.description a.genreLink:hover{
+			text-decoration: underline;
+		}
+		div.description h3{
+			margin: 0;
+			font-weight: bold;
+		}
+		div.description h4{
+			font-weight: bold;
+			font-size:1.1em;
+		}
+		#dec{
+			margin: 10px;	
+		}

@@ -1,0 +1,1344 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hooks>
+
+	<hooktype type="ads">
+		<hook>ads_list_criteria</hook>
+		<hook>ad_check_criteria</hook>
+	</hooktype>
+
+	<hooktype type="admindata">
+		<hook>admindata_start</hook>
+		<hook>admindata_presave</hook>
+		<hook>admindata_postsave</hook>
+		<hook>admindata_delete</hook>
+	</hooktype>
+
+	<hooktype type="adminindex" admin="1">
+		<hook>admin_index_main1</hook>
+		<hook>admin_index_main2</hook>
+		<hook>admin_index_main3</hook>
+		<hook>admin_index_navigation</hook>
+	</hooktype>
+
+	<hooktype type="ajax">
+		<hook>ajax_start</hook>
+		<hook>ajax_complete</hook>
+	</hooktype>
+
+	<hooktype type="album">
+		<hook>album_start_precheck</hook>
+		<hook>album_start_postcheck</hook>
+		<hook>album_album_update</hook>
+		<hook>album_album_edit</hook>
+		<hook>album_picture_update</hook>
+		<hook>album_picture_update_complete</hook>
+		<hook>album_picture_editbit</hook>
+		<hook>album_picture_edit_complete</hook>
+		<hook>album_picture</hook>
+		<hook>album_picture_complete</hook>
+		<hook>album_album</hook>
+		<hook>album_album_query</hook>
+		<hook>album_album_picturebit</hook>
+		<hook>album_album_complete</hook>
+		<hook>album_user_query</hook>
+		<hook>album_user_albumbit</hook>
+		<hook>album_user_complete</hook>
+		<hook>album_latest_complete</hook>
+		<hook>album_moderated_complete</hook>
+		<hook>album_unread_picturebit</hook>
+		<hook>album_unread_complete</hook>
+		<hook>album_fetch_albuminfo</hook>
+		<hook>album_fetch_pictureinfo</hook>
+		<hook>album_prepare_thumb</hook>
+		<hook>album_can_see_private</hook>
+		<hook>albumbit_display_start</hook>
+		<hook>albumbit_display_complete</hook>
+		<hook>album_sort_field</hook>
+	</hooktype>
+
+	<hooktype type="albumdata">
+		<hook>albumdata_start</hook>
+		<hook>albumdata_presave</hook>
+		<hook>albumdata_postsave</hook>
+		<hook>albumdata_delete</hook>
+	</hooktype>
+
+	<hooktype type="announcement">
+		<hook>announcement_start</hook>
+		<hook>announcement_query</hook>
+		<hook>announcement_complete</hook>
+	</hooktype>
+
+	<hooktype type="announcementdata">
+		<hook>announcementdata_start</hook>
+		<hook>announcementdata_presave</hook>
+		<hook>announcementdata_postsave</hook>
+		<hook>announcementdata_delete</hook>
+	</hooktype>
+
+	<hooktype type="archive">
+		<hook>archive_global</hook>
+		<hook>archive_process_start</hook>
+		<hook>archive_postheader</hook>
+		<hook>archive_navigation</hook>
+		<hook>archive_forum</hook>
+		<hook>archive_forum_thread</hook>
+		<hook>archive_thread_post</hook>
+		<hook>archive_complete</hook>
+		<hook>archive_complete_postoutput</hook>
+	</hooktype>
+
+	<hooktype type="assets">
+		<hook>asset_filedata_complete</hook>
+		<hook>asset_filedata_display</hook>
+		<hook>assetmanager_orderby</hook>
+		<hook>assetmanager_viewtype</hook>
+	</hooktype>
+
+	<hooktype type="attachdata">
+		<hook>attachdata_doset</hook>
+		<hook>attachdata_start</hook>
+		<hook>attachdata_postsave</hook>
+	</hooktype>
+
+	<hooktype type="attachment">
+		<hook>attachment_start</hook>
+		<hook>attachment_lightbox</hook>
+		<hook>attachment_display</hook>
+		<hook>attachment_complete</hook>
+		<hook>attachment_inlinemod_approve</hook>
+		<hook>attachment_inlinemod_authenticate_switch</hook>
+		<hook>attachment_inlinemod_delete</hook>
+		<hook>attachment_inlinemod_dodelete</hook>
+		<hook>attachment_inlinemod_start</hook>
+	</hooktype>
+
+	<hooktype type="calendar">
+		<hook>calendar_start</hook>
+		<hook>calendar_start2</hook>
+		<hook>calendar_displaymonth_start</hook>
+		<hook>calendar_displaymonth_event</hook>
+		<hook>calendar_displaymonth_daybit</hook>
+		<hook>calendar_displaymonth_weekbit</hook>
+		<hook>calendar_displaymonth_month</hook>
+		<hook>calendar_displaymonth_complete</hook>
+		<hook>calendar_displayweek_start</hook>
+		<hook>calendar_displayweek_event</hook>
+		<hook>calendar_displayweek_complete</hook>
+		<hook>calendar_displayyear_start</hook>
+		<hook>calendar_displayyear_complete</hook>
+		<hook>calendar_manage_start</hook>
+		<hook>calendar_manage_complete</hook>
+		<hook>calendar_getday_start</hook>
+		<hook>calendar_getday_event</hook>
+		<hook>calendar_getday_complete</hook>
+		<hook>calendar_edit_start</hook>
+		<hook>calendar_edit_complete</hook>
+		<hook>calendar_add_start</hook>
+		<hook>calendar_add_complete</hook>
+		<hook>calendar_update_start</hook>
+		<hook>calendar_update_process</hook>
+		<hook>calendar_update_complete</hook>
+		<hook>calendar_deletereminder</hook>
+		<hook>calendar_dostuff</hook>
+		<hook>calendar_viewreminder_start</hook>
+		<hook>calendar_viewreminder_event</hook>
+		<hook>calendar_viewreminder_complete</hook>
+		<hook>calendar_doaddreminder</hook>
+		<hook>calendar_addreminder</hook>
+	</hooktype>
+
+	<hooktype type="converse">
+		<hook>converse_start</hook>
+		<hook>converse_query</hook>
+		<hook>converse_complete</hook>
+	</hooktype>
+
+	<hooktype type="cron">
+		<hook>cron_start</hook>
+		<hook>cron_script_cleanup_daily</hook>
+		<hook>cron_script_cleanup_hourly</hook>
+		<hook>cron_script_cleanup_hourly2</hook>
+		<hook>cron_script_subscriptions</hook>
+		<hook>cron_complete</hook>
+	</hooktype>
+
+	<hooktype type="css">
+		<hook>css_start</hook>
+	</hooktype>
+
+	<hooktype type="data">
+		<hook>data_start</hook>
+		<hook>data_presave</hook>
+		<hook>data_postsave</hook>
+		<hook>data_delete</hook>
+		<hook>data_parse_bbcode_video</hook>
+		<hook>data_preparse_bbcode_video_start</hook>
+	</hooktype>
+
+	<hooktype type="database">
+		<hook>database_pre_fetch_array</hook>
+		<hook>database_post_fetch_array</hook>
+		<hook>database_pre_fetch_row</hook>
+		<hook>database_post_fetch_row</hook>
+		<hook>database_pre_fetch_field</hook>
+		<hook>database_post_fetch_field</hook>
+	</hooktype>
+
+	<hooktype type="deletionlogdata">
+		<hook>deletionlogdata_start</hook>
+		<hook>deletionlogdata_presave</hook>
+		<hook>deletionlogdata_postsave</hook>
+		<hook>deletionlogdata_delete</hook>
+	</hooktype>
+
+	<hooktype type="digest">
+		<hook>digest_thread_post</hook>
+		<hook>digest_thread_process</hook>
+		<hook>digest_forum_thread</hook>
+		<hook>digest_forum_process</hook>
+		<hook>digest_group_discussion</hook>
+		<hook>digest_group_process</hook>
+	</hooktype>
+
+	<hooktype type="editor">
+		<hook>editor_construct</hook>
+		<hook>editor_custom_toolbar_loop</hook>
+		<hook>editor_output_html</hook>
+		<hook>editor_toolbar_end</hook>
+		<hook>editor_toolbar_filter</hook>
+		<hook>editor_toolbar_start</hook>
+		<hook>editor_toolbar_switch</hook>
+		<hook>editor_switch_wysiwyg_to_standard</hook>
+		<hook>editor_wysiwyg_compatible</hook>
+	</hooktype>
+
+	<hooktype type="editpost">
+		<hook>editpost_start</hook>
+		<hook>editpost_update_start</hook>
+		<hook>editpost_update_process</hook>
+		<hook>editpost_update_thread</hook>
+		<hook>editpost_update_complete</hook>
+		<hook>editpost_edit_start</hook>
+		<hook>editpost_edit_ajax</hook>
+		<hook>editpost_edit_complete</hook>
+		<hook>editpost_delete_start</hook>
+		<hook>editpost_delete_complete</hook>
+		<hook>editpost_update_process</hook>
+		<hook>editpost_update_process</hook>
+	</hooktype>
+
+	<hooktype type="eventdata">
+		<hook>eventdata_start</hook>
+		<hook>eventdata_presave</hook>
+		<hook>eventdata_postsave</hook>
+		<hook>eventdata_delete</hook>
+	</hooktype>
+
+	<hooktype type="external">
+		<hook>external_start</hook>
+		<hook>external_query</hook>
+		<hook>external_type</hook>
+		<hook>external_complete</hook>
+	</hooktype>
+
+	<hooktype type="faq">
+		<hook>faq_start</hook>
+		<hook>faq_search_query</hook>
+		<hook>faq_cache_query</hook>
+		<hook>faq_item_display</hook>
+		<hook>faq_complete</hook>
+	</hooktype>
+
+	<hooktype type="forumadmin" admin="1">
+		<hook>forumadmin_start</hook>
+		<hook>forumadmin_add_default</hook>
+		<hook>forumadmin_edit_form</hook>
+		<hook>forumadmin_update_save</hook>
+	</hooktype>
+
+	<hooktype type="forumbit">
+		<hook>forumbit_display</hook>
+		<hook>forumbit_moderator</hook>
+		<hook>forumbit_subforumbit</hook>
+		<hook>forumbit_subforumbit2</hook>
+	</hooktype>
+
+	<hooktype type="forumdata">
+		<hook>forumdata_start</hook>
+		<hook>forumdata_presave</hook>
+		<hook>forumdata_postsave</hook>
+		<hook>forumdata_delete</hook>
+	</hooktype>
+
+	<hooktype type="forumdisplay">
+		<hook>forumdisplay_start</hook>
+		<hook>forumdisplay_moderator</hook>
+		<hook>forumdisplay_loggedinuser</hook>
+		<hook>forumdisplay_announcement_query</hook>
+		<hook>forumdisplay_announcement</hook>
+		<hook>forumdisplay_sort</hook>
+		<hook>forumdisplay_query_threadscount</hook>
+		<hook>forumdisplay_query_threadid</hook>
+		<hook>forumdisplay_query</hook>
+		<hook>forumdisplay_complete</hook>
+	</hooktype>
+
+	<hooktype type="forumhome">
+		<hook>forumhome_start</hook>
+		<hook>forumhome_event</hook>
+		<hook>forumhome_loggedinuser_query</hook>
+		<hook>forumhome_loggedinuser</hook>
+		<hook>forumhome_complete</hook>
+	</hooktype>
+
+	<hooktype type="friendlyurl">
+		<hook>friendlyurl_resolve_class</hook>
+		<hook>friendlyurl_redirect_canonical</hook>
+		<hook>friendlyurl_redirect_canonical_route</hook>
+	</hooktype>
+
+	<hooktype type="general">
+		<hook>init_startup</hook>
+		<hook>style_fetch</hook>
+		<hook>cache_templates</hook>
+		<hook>parse_templates</hook>
+		<hook>process_templates_complete</hook>
+		<hook>global_start</hook>
+		<hook>global_bootstrap_init_complete</hook>
+		<hook>global_bootstrap_complete</hook>
+		<hook>global_bootstrap_init_start</hook>
+		<hook>global_state_check</hook>
+		<hook>global_setup_complete</hook>
+		<hook>global_complete</hook>
+		<hook>global_shutdown</hook>
+		<hook>cache_ordered_forums</hook>
+		<hook>error_fetch</hook>
+		<hook>error_nopermission</hook>
+		<hook>error_generic</hook>
+		<hook>redirect_generic</hook>
+		<hook>fetch_foruminfo</hook>
+		<hook>fetch_musername</hook>
+		<hook>fetch_modlogtypes</hook>
+		<hook>fetch_modlogactions</hook>
+		<hook>fetch_threadinfo</hook>
+		<hook>fetch_threadinfo_query</hook>
+		<hook>fetch_postinfo</hook>
+		<hook>fetch_postinfo_query</hook>
+		<hook>fetch_userinfo</hook>
+		<hook>fetch_userinfo_query</hook>
+		<hook>can_moderate_forum</hook>
+		<hook>cache_permissions</hook>
+		<hook>forumjump</hook>
+		<hook>header_redirect</hook>
+		<hook>log_moderator_action</hook>
+		<hook>mail_internal_send_after</hook>
+		<hook>mail_internal_send_before</hook>
+		<hook>mail_send</hook>
+		<hook>navbits</hook>
+		<hook>navbits_complete</hook>
+		<hook>notices_noticebit</hook>
+		<hook>notifications_list</hook>
+		<hook>pagenav_page</hook>
+		<hook>pagenav_complete</hook>
+		<hook>replacement_vars</hook>
+		<hook>forumrules</hook>
+		<hook>bbcode_fetch_tags</hook>
+		<hook>bbcode_create</hook>
+		<hook>bbcode_parse_start</hook>
+		<hook>bbcode_parse_complete_precache</hook>
+		<hook>bbcode_parse_complete</hook>
+		<hook>dot_threads_array</hook>
+		<hook>url_to_bbcode</hook>
+		<hook>url_to_bbcode_callback</hook>
+		<hook>quotable_posts_query</hook>
+		<hook>quotable_posts_logic</hook>
+		<hook>upload_accept</hook>
+		<hook>upload_attachsum_total</hook>
+		<hook>upload_attachsum_user</hook>
+		<hook>prefix_fetch_array</hook>
+		<hook>collection_factory_create</hook>
+		<hook>bit_factory_create</hook>
+		<hook>xml_print_output</hook>
+		<hook>template_register_var</hook>
+		<hook>memberaction_dropdown</hook>
+		<hook>fetch_session_complete</hook>
+	</hooktype>
+
+	<hooktype type="generaladmin" admin="1">
+		<hook>admin_global</hook>
+		<hook>admin_global_datastore_check</hook>
+		<hook>admin_login_area_switch</hook>
+		<hook>admin_complete</hook>
+		<hook>admin_delete_confirmation</hook>
+		<hook>admin_language_import</hook>
+		<hook>admin_options_print</hook>
+		<hook>admin_options_processing</hook>
+		<hook>admin_options_processing_build</hook>
+		<hook>admin_options_processing_censorcode</hook>
+		<hook>admin_style_form</hook>
+		<hook>admin_style_import</hook>
+		<hook>admin_style_save</hook>
+		<hook>admin_style_datastore</hook>
+		<hook>admin_moderator_form</hook>
+		<hook>admin_moderator_save</hook>
+		<hook>admin_moderator_killall</hook>
+		<hook>admin_usergroup_edit</hook>
+		<hook>admin_usergroup_kill</hook>
+		<hook>admin_usergroup_save</hook>
+		<hook>admin_usergroup_save_complete</hook>
+		<hook>admin_fperms_form</hook>
+		<hook>admin_fperms_save</hook>
+		<hook>admin_fperms_doquickforum</hook>
+		<hook>admin_permissions_form</hook>
+		<hook>admin_permissions_process</hook>
+		<hook>admin_build_forum_perms_group</hook>
+		<hook>admin_build_forum_perms_forum</hook>
+		<hook>admin_cache_forum_perms</hook>
+		<hook>admin_attachmenttype</hook>
+		<hook>admin_product_export</hook>
+		<hook>admin_maintenance</hook>
+		<hook>admin_queries_auto_options</hook>
+		<hook>admin_queries_auto_query</hook>
+		<hook>template_groups</hook>
+		<hook>template_safe_functions</hook>
+		<hook>template_compile</hook>
+		<hook>can_administer</hook>
+		<hook>admin_modlogviewer_query</hook>
+		<hook>admin_modlogviewer_query_loop</hook>
+		<hook>admin_modlogviewer_query_linkfield</hook>
+		<hook>admin_humanverify_intro_start</hook>
+		<hook>admin_humanverify_intro_setting</hook>
+		<hook>admin_humanverify_intro_output</hook>
+		<hook>admin_profilefield_start</hook>
+		<hook>admin_cache_bbcode</hook>
+		<hook>admin_cache_smilies</hook>
+		<hook>admin_search_options</hook>
+	</hooktype>
+
+	<hooktype type="generalmod" admin="1">
+		<hook>mod_global</hook>
+		<hook>mod_index_main</hook>
+		<hook>mod_index_navigation</hook>
+	</hooktype>
+
+	<hooktype type="group">
+		<hook>group_start_precheck</hook>
+		<hook>group_start_postcheck</hook>
+		<hook>group_list_mygroupsbit</hook>
+		<hook>group_list_filter</hook>
+		<hook>group_list_groupbit</hook>
+		<hook>group_search_perform</hook>
+		<hook>group_dojoin</hook>
+		<hook>group_docreate</hook>
+		<hook>group_doedit</hook>
+		<hook>group_memberbit</hook>
+		<hook>group_discuss_start</hook>
+		<hook>group_discuss_end</hook>
+		<hook>group_view_discussion_start</hook>
+		<hook>group_view_message_query</hook>
+		<hook>group_view_pictures_start</hook>
+		<hook>group_pictures_query</hook>
+		<hook>group_picturebit</hook>
+		<hook>group_memberbit</hook>
+		<hook>group_picture_delete</hook>
+		<hook>group_picture_edit_complete</hook>
+		<hook>group_picture_editbit</hook>
+		<hook>group_picture_update</hook>
+		<hook>group_picture_update_complete</hook>
+		<hook>group_pictures_query</hook>
+		<hook>group_picturebit</hook>
+		<hook>group_picture</hook>
+		<hook>group_manage_memberbit</hook>
+		<hook>group_newgroup_bit</hook>
+		<hook>group_kickmember</hook>
+		<hook>group_kickmember_complete</hook>
+		<hook>group_pending_members</hook>
+		<hook>group_pending_members_complete</hook>
+		<hook>group_complete</hook>
+		<hook>group_prepareinfo</hook>
+		<hook>group_fetch_pictureinfo</hook>
+		<hook>group_fetch_random</hook>
+		<hook>group_fetch_newest</hook>
+		<hook>group_fetch_own</hook>
+		<hook>group_build_counters</hook>
+		<hook>group_update_groupicon_start</hook>
+		<hook>group_update_groupicon_complete</hook>
+		<hook>group_edit_groupicon</hook>
+		<hook>group_overview</hook>
+		<hook>group_view_categories_start</hook>
+		<hook>group_view_categories_query</hook>
+	</hooktype>
+
+	<hooktype type="group_category">
+		<hook>categorylist_bit_display_start</hook>
+		<hook>categorylist_bit_display_complete</hook>
+		<hook>group_category_sort_field</hook>
+	</hooktype>
+
+	<hooktype type="group_discussion">
+		<hook>discussiondata_start</hook>
+		<hook>discussiondata_presave</hook>
+		<hook>discussiondata_postsave</hook>
+		<hook>discussiondata_delete</hook>
+		<hook>discussion_build_counters</hook>
+		<hook>group_view_discussion_query</hook>
+		<hook>group_messagebit_display_start</hook>
+		<hook>group_messagebit_display_complete</hook>
+		<hook>group_message_sort_field</hook>
+		<hook>group_discussion_sort_field</hook>
+		<hook>group_discussionbit_display_start</hook>
+		<hook>group_discussionbit_display_complete</hook>
+		<hook>newpost_sg_notification_start</hook>
+		<hook>new_sg_message_notification_message</hook>
+	</hooktype>
+
+	<hooktype type="group_inlinemod">
+		<hook>group_inlinemod_authenticate_switch</hook>
+		<hook>group_inlinemod_start</hook>
+		<hook>group_inlinemod_approveunapprove</hook>
+		<hook>group_inlinemod_delete</hook>
+		<hook>group_inlinemod_dodelete</hook>
+		<hook>group_inlinemod_undelete</hook>
+	</hooktype>
+
+	<hooktype type="group_message">
+		<hook>group_message_post_start</hook>
+		<hook>group_message_post_ajax</hook>
+		<hook>group_message_post_complete</hook>
+		<hook>group_message_form_start</hook>
+		<hook>group_message_form_complete</hook>
+		<hook>group_message_delete</hook>
+		<hook>group_message_getip</hook>
+		<hook>group_messagebit_display_start</hook>
+		<hook>group_messagebit_display_complete</hook>
+	</hooktype>
+
+	<hooktype type="groupmessagedata">
+		<hook>groupmessagedata_start</hook>
+		<hook>groupmessagedata_presave</hook>
+		<hook>groupmessagedata_postsave</hook>
+		<hook>groupmessagedata_delete</hook>
+	</hooktype>
+
+	<hooktype type="image">
+		<hook>image_table</hook>
+		<hook>image_exists</hook>
+		<hook>image_missing</hook>
+	</hooktype>
+
+	<hooktype type="infraction">
+		<hook>infraction_start</hook>
+		<hook>infraction_verify_permissions</hook>
+		<hook>infraction_reverse_start</hook>
+		<hook>infraction_reverse_process</hook>
+		<hook>infraction_reverse_complete</hook>
+		<hook>infraction_view_start</hook>
+		<hook>infraction_view_complete</hook>
+		<hook>infraction_update_start</hook>
+		<hook>infraction_update_process</hook>
+		<hook>infraction_update_complete</hook>
+		<hook>infraction_report_start</hook>
+		<hook>infraction_report_complete</hook>
+	</hooktype>
+
+	<hooktype type="infractiondata">
+		<hook>infractiondata_start</hook>
+		<hook>infractiondata_presave</hook>
+		<hook>infractiondata_postsave</hook>
+		<hook>infractiondata_delete</hook>
+	</hooktype>
+
+	<hooktype type="inlinemod">
+		<hook>inlinemod_authenticate_switch</hook>
+		<hook>inlinemod_action_switch</hook>
+		<hook>inlinemod_start</hook>
+		<hook>inlinemod_clearthread</hook>
+		<hook>inlinemod_clearpost</hook>
+		<hook>inlinemod_closeopen</hook>
+		<hook>inlinemod_stickunstick</hook>
+		<hook>inlinemod_deletethread</hook>
+		<hook>inlinemod_dodeletethread</hook>
+		<hook>inlinemod_undeletethread</hook>
+		<hook>inlinemod_approvethread</hook>
+		<hook>inlinemod_unapprovethread</hook>
+		<hook>inlinemod_movethread</hook>
+		<hook>inlinemod_domovethread</hook>
+		<hook>inlinemod_mergethread</hook>
+		<hook>inlinemod_domergethread</hook>
+		<hook>inlinemod_deleteposts</hook>
+		<hook>inlinemod_dodeleteposts</hook>
+		<hook>inlinemod_undeleteposts</hook>
+		<hook>inlinemod_approveposts</hook>
+		<hook>inlinemod_unapproveposts</hook>
+		<hook>inlinemod_approveattachments</hook>
+		<hook>inlinemod_unapproveattachments</hook>
+		<hook>inlinemod_domergeposts_process</hook>
+		<hook>inlinemod_domergeposts_complete</hook>
+		<hook>inlinemod_mergeposts_post</hook>
+		<hook>inlinemod_mergeposts_complete</hook>
+		<hook>inlinemod_moveposts</hook>
+		<hook>inlinemod_domoveposts</hook>
+		<hook>inlinemod_copyposts</hook>
+		<hook>inlinemod_docopyposts</hook>
+		<hook>inlinemod_complete</hook>
+		<hook>inlinemod_spamthread</hook>
+		<hook>inlinemod_spampost</hook>
+		<hook>inlinemod_spam_permission</hook>
+		<hook>inlinemod_spamconfirm_defaultaction</hook>
+		<hook>inlinemod_spamconfirm</hook>
+		<hook>inlinemod_deletespam_defaultaction</hook>
+		<hook>inlinemod_deletespam</hook>
+	</hooktype>
+
+	<hooktype type="joinrequest">
+		<hook>joinrequest_start</hook>
+		<hook>joinrequest_process_start</hook>
+		<hook>joinrequest_process_complete</hook>
+		<hook>joinrequest_view_start</hook>
+		<hook>joinrequest_view_bit</hook>
+		<hook>joinrequest_complete</hook>
+	</hooktype>
+
+	<hooktype type="login">
+		<hook>login_process</hook>
+		<hook>login_strikes</hook>
+		<hook>login_verify_success</hook>
+		<hook>login_verify_failure_username</hook>
+		<hook>login_verify_failure_password</hook>
+		<hook>login_failure</hook>
+		<hook>login_redirect</hook>
+		<hook>logout_process</hook>
+		<hook>reset_password</hook>
+	</hooktype>
+
+	<hooktype type="member">
+		<hook>member_start</hook>
+		<hook>member_execute_start</hook>
+		<hook>member_build_blocks_start</hook>
+		<hook>member_customfields</hook>
+		<hook>member_complete</hook>
+		<hook>member_infraction_start</hook>
+		<hook>member_infractionbit</hook>
+		<hook>member_infraction_complete</hook>
+		<hook>member_profileblock_fetch_unwrapped</hook>
+		<hook>member_profileblock_friends_query</hook>
+		<hook>member_profileblock_friendbit</hook>
+		<hook>member_profileblock_profilefieldbit</hook>
+		<hook>member_profileblock_profilefield_category</hook>
+		<hook>member_profileblock_album_query</hook>
+		<hook>member_profileblock_recentvisitors_query</hook>
+		<hook>member_profileblock_visitormessage_query</hook>
+		<hook>member_start_fetch_user</hook>
+		<hook>userprofile_create</hook>
+		<hook>userprofile_prepare</hook>
+	</hooktype>
+
+	<hooktype type="member_inlinemod">
+		<hook>member_inlinemod_authenticate_switch</hook>
+		<hook>member_inlinemod_start</hook>
+		<hook>member_inlinemod_approveunapprove</hook>
+		<hook>member_inlinemod_delete</hook>
+		<hook>member_inlinemod_dodelete</hook>
+		<hook>member_inlinemod_undelete</hook>
+	</hooktype>
+
+	<hooktype type="memberlist">
+		<hook>memberlist_start</hook>
+		<hook>memberlist_query_userscount</hook>
+		<hook>memberlist_fetch</hook>
+		<hook>memberlist_bit</hook>
+		<hook>memberlist_complete</hook>
+	</hooktype>
+
+	<hooktype type="misc">
+		<hook>misc_start</hook>
+		<hook>misc_buddylist_start</hook>
+		<hook>misc_buddylist_bit</hook>
+		<hook>misc_buddylist_complete</hook>
+		<hook>misc_whoposted_start</hook>
+		<hook>misc_whoposted_complete</hook>
+		<hook>misc_bbcode_start</hook>
+		<hook>misc_bbcode_bit</hook>
+		<hook>misc_bbcode_complete</hook>
+		<hook>misc_smiliespopup_start</hook>
+		<hook>misc_smiliespopup_category</hook>
+		<hook>misc_smiliespopup_smilie</hook>
+		<hook>misc_smiliespopup_complete</hook>
+		<hook>misc_smilieslist_start</hook>
+		<hook>misc_smilieslist_category</hook>
+		<hook>misc_smilieslist_smilie</hook>
+		<hook>misc_smilieslist_complete</hook>
+		<hook>misc_showattachments_start</hook>
+		<hook>misc_showattachments_complete</hook>
+	</hooktype>
+
+	<hooktype type="moderation">
+		<hook>moderation_start</hook>
+		<hook>moderation_attachments_start</hook>
+		<hook>moderation_threads_start</hook>
+		<hook>moderation_threads_sort</hook>
+		<hook>moderation_threadsquery_threadscount</hook>
+		<hook>moderation_threadsquery_threadid</hook>
+		<hook>moderation_threadsquery</hook>
+		<hook>moderation_threads_complete</hook>
+		<hook>moderation_posts_start</hook>
+		<hook>moderation_posts_sort</hook>
+		<hook>moderation_postsquery_postscount</hook>
+		<hook>moderation_postsquery_postid</hook>
+		<hook>moderation_postsquery</hook>
+		<hook>moderation_posts_complete</hook>
+		<hook>moderation_visitor_messages_start</hook>
+		<hook>moderation_visitor_messages_sort</hook>
+		<hook>moderation_visitor_messages_query</hook>
+		<hook>moderation_visitor_messages_complete</hook>
+		<hook>moderation_group_messages_start</hook>
+		<hook>moderation_group_messages_complete</hook>
+		<hook>moderation_picture_comments_start</hook>
+		<hook>moderation_picture_comments_sort</hook>
+		<hook>moderation_picture_comments_query</hook>
+		<hook>moderation_picture_comments_complete</hook>
+		<hook>moderation_picture_sort</hook>
+		<hook>moderation_picture_query</hook>
+		<hook>moderation_picture_complete</hook>
+	</hooktype>
+
+	<hooktype type="moderatordata">
+		<hook>moderatordata_start</hook>
+		<hook>moderatordata_presave</hook>
+		<hook>moderatordata_postsave</hook>
+		<hook>moderatordata_delete</hook>
+	</hooktype>
+
+	<hooktype type="newattachment">
+		<hook>newattachment_start</hook>
+		<hook>newattachment_attach</hook>
+		<hook>newattachment_attachsum</hook>
+		<hook>newattachment_complete</hook>
+	</hooktype>
+
+	<hooktype type="newpost">
+		<hook>newpost_process</hook>
+		<hook>newpost_subscribe</hook>
+		<hook>newpost_notification_start</hook>
+		<hook>newpost_notification_message</hook>
+		<hook>newpost_complete</hook>
+		<hook>newpost_preview</hook>
+	</hooktype>
+
+	<hooktype type="newreply">
+		<hook>newreply_start</hook>
+		<hook>newreply_quote</hook>
+		<hook>newreply_post_start</hook>
+		<hook>newreply_post_quote</hook>
+		<hook>newreply_post_ajax</hook>
+		<hook>newreply_post_complete</hook>
+		<hook>newreply_form_start</hook>
+		<hook>newreply_form_threadmanage</hook>
+		<hook>newreply_form_reviewbit</hook>
+		<hook>newreply_form_complete</hook>
+	</hooktype>
+
+	<hooktype type="newthread">
+		<hook>newthread_start</hook>
+		<hook>newthread_post_start</hook>
+		<hook>newthread_post_complete</hook>
+		<hook>newthread_form_start</hook>
+		<hook>newthread_form_threadmanage</hook>
+		<hook>newthread_form_complete</hook>
+	</hooktype>
+
+	<hooktype type="notice">
+		<hook>notices_list_criteria</hook>
+		<hook>notices_check_start</hook>
+		<hook>notices_check_criteria</hook>
+	</hooktype>
+
+	<hooktype type="online">
+		<hook>online_start</hook>
+		<hook>online_query</hook>
+		<hook>online_user</hook>
+		<hook>online_location_preprocess</hook>
+		<hook>online_location_process</hook>
+		<hook>online_location_unknown</hook>
+		<hook>online_ids_titles</hook>
+		<hook>online_bit_complete</hook>
+		<hook>online_complete</hook>
+	</hooktype>
+
+	<hooktype type="paidsub">
+		<hook>paidsub_start</hook>
+		<hook>paidsub_list_start</hook>
+		<hook>paidsub_list_activebit</hook>
+		<hook>paidsub_list_availablebit</hook>
+		<hook>paidsub_order_start</hook>
+		<hook>paidsub_order_paymentbit</hook>
+		<hook>paidsub_construct_payment</hook>
+		<hook>paidsub_complete</hook>
+		<hook>paidsub_build</hook>
+		<hook>paidsub_delete</hook>
+	</hooktype>
+
+	<hooktype type="picturecomment">
+		<hook>picture_comment_start</hook>
+		<hook>picture_comment_start2</hook>
+		<hook>picture_comment_post_start</hook>
+		<hook>picture_comment_post_ajax</hook>
+		<hook>picture_comment_post_complete</hook>
+		<hook>picture_comment_form_start</hook>
+		<hook>picture_comment_form_complete</hook>
+		<hook>picture_comment_getip</hook>
+		<hook>picture_comment_complete</hook>
+		<hook>picture_commentbit_factory</hook>
+		<hook>picture_commentbit_display_start</hook>
+		<hook>picture_commentbit_display_complete</hook>
+		<hook>picture_comment_query</hook>
+		<hook>picture_comment_build_counters</hook>
+	</hooktype>
+
+	<hooktype type="picturecomment_inlinemod">
+		<hook>picturecomment_inlinemod_authenticate_switch</hook>
+		<hook>picturecomment_inlinemod_start</hook>
+		<hook>picturecomment_inlinemod_approveunapprove</hook>
+		<hook>picturecomment_inlinemod_delete</hook>
+		<hook>picturecomment_inlinemod_dodelete</hook>
+		<hook>picturecomment_inlinemod_undelete</hook>
+	</hooktype>
+
+	<hooktype type="picturecommentdata">
+		<hook>picturecommentdata_start</hook>
+		<hook>picturecommentdata_presave</hook>
+		<hook>picturecommentdata_postsave</hook>
+		<hook>picturecommentdata_delete</hook>
+	</hooktype>
+
+	<hooktype type="picturedata">
+		<hook>picturedata_delete</hook>
+	</hooktype>
+
+	<hooktype type="pmdata">
+		<hook>pmdata_start</hook>
+		<hook>pmdata_presave</hook>
+		<hook>pmdata_postsave_recipient</hook>
+		<hook>pmdata_postsave</hook>
+	</hooktype>
+
+	<hooktype type="poll">
+		<hook>poll_start</hook>
+		<hook>poll_post_start</hook>
+		<hook>poll_post_process</hook>
+		<hook>poll_post_complete</hook>
+		<hook>poll_newform_start</hook>
+		<hook>poll_newform_complete</hook>
+		<hook>poll_editform_start</hook>
+		<hook>poll_editform_complete</hook>
+		<hook>poll_update_start</hook>
+		<hook>poll_update_process</hook>
+		<hook>poll_update_complete</hook>
+		<hook>poll_results_start</hook>
+		<hook>poll_results_bit</hook>
+		<hook>poll_results_complete</hook>
+		<hook>poll_vote_start</hook>
+		<hook>poll_vote_complete</hook>
+	</hooktype>
+
+	<hooktype type="polldata">
+		<hook>polldata_start</hook>
+		<hook>polldata_presave</hook>
+		<hook>polldata_postsave</hook>
+		<hook>polldata_delete</hook>
+	</hooktype>
+
+	<hooktype type="pollvotedata">
+		<hook>pollvotedata_start</hook>
+		<hook>pollvotedata_presave</hook>
+		<hook>pollvotedata_postsave</hook>
+		<hook>pollvotedata_delete</hook>
+	</hooktype>
+
+	<hooktype type="postbit">
+		<hook>postbit_factory</hook>
+		<hook>postbit_display_start</hook>
+		<hook>postbit_display_complete</hook>
+		<hook>postbit_attachment</hook>
+		<hook>postbit_imicons</hook>
+		<hook>postbit_lite</hook>
+	</hooktype>
+
+	<hooktype type="postdata">
+		<hook>postdata_start</hook>
+		<hook>postdata_presave</hook>
+		<hook>postdata_postsave</hook>
+		<hook>postdata_delete</hook>
+	</hooktype>
+
+	<hooktype type="posthistory">
+		<hook>posthistory_start</hook>
+		<hook>posthistory_history_bits</hook>
+		<hook>posthistory_compare</hook>
+		<hook>posthistory_comparebit</hook>
+		<hook>posthistory_complete</hook>
+	</hooktype>
+
+	<hooktype type="posticons">
+		<hook>posticons_start</hook>
+		<hook>posticons_bit</hook>
+		<hook>posticons_complete</hook>
+	</hooktype>
+
+	<hooktype type="prefixdata">
+		<hook>prefixdata_start</hook>
+		<hook>prefixdata_presave</hook>
+		<hook>prefixdata_postsave</hook>
+		<hook>prefixdata_delete</hook>
+	</hooktype>
+
+	<hooktype type="prefixsetdata">
+		<hook>prefixsetdata_start</hook>
+		<hook>prefixsetdata_presave</hook>
+		<hook>prefixsetdata_postsave</hook>
+		<hook>prefixsetdata_delete</hook>
+	</hooktype>
+
+	<hooktype type="printthread">
+		<hook>printthread_start</hook>
+		<hook>printthread_post</hook>
+		<hook>printthread_complete</hook>
+	</hooktype>
+
+	<hooktype type="private">
+		<hook>private_start</hook>
+		<hook>private_updatefolders</hook>
+		<hook>private_emptyfolder</hook>
+		<hook>private_confirmemptyfolder</hook>
+		<hook>private_editfolders_start</hook>
+		<hook>private_editfolders_bit</hook>
+		<hook>private_fetchreply_start</hook>
+		<hook>private_deletepmreceipt</hook>
+		<hook>private_dopmreceipt</hook>
+		<hook>private_trackpm_start</hook>
+		<hook>private_trackpm_receiptbit</hook>
+		<hook>private_movepm</hook>
+		<hook>private_managepm_start</hook>
+		<hook>private_managepm_move</hook>
+		<hook>private_managepm_unread</hook>
+		<hook>private_managepm_read</hook>
+		<hook>private_managepm_delete</hook>
+		<hook>private_managepm_action_switch</hook>
+		<hook>private_downloadpm_start</hook>
+		<hook>private_downloadpm_bit</hook>
+		<hook>private_insertpm_process</hook>
+		<hook>private_insertpm_complete</hook>
+		<hook>private_newpm_start</hook>
+		<hook>private_newpm_reply</hook>
+		<hook>private_newpm_blank</hook>
+		<hook>private_showpm_start</hook>
+		<hook>private_messagelist_start</hook>
+		<hook>private_messagelist_filter</hook>
+		<hook>private_messagelist_messagebit</hook>
+		<hook>private_messagelist_period</hook>
+		<hook>private_complete</hook>
+	</hooktype>
+
+	<hooktype type="profile">
+		<hook>profile_start</hook>
+		<hook>profile_fetch_profilefields</hook>
+		<hook>profile_fetch_profilefields_loc</hook>
+		<hook>profile_dst</hook>
+		<hook>profile_editpassword_start</hook>
+		<hook>profile_updatepassword_start</hook>
+		<hook>profile_updatepassword_complete</hook>
+		<hook>profile_editconnections_start</hook>
+		<hook>profile_doaddlist_start</hook>
+		<hook>profile_doaddlist_complete</hook>
+		<hook>profile_doremovelist_start</hook>
+		<hook>profile_doremovelist_complete</hook>
+		<hook>profile_updatelist_start</hook>
+		<hook>profile_updatelist_listtype</hook>
+		<hook>profile_updatelist_process</hook>
+		<hook>profile_updatelist_addfriend</hook>
+		<hook>profile_updatelist_complete</hook>
+		<hook>profile_contactlist_listtype</hook>
+		<hook>profile_editprofile_start</hook>
+		<hook>profile_updateprofile</hook>
+		<hook>profile_editoptions_start</hook>
+		<hook>profile_updateoptions</hook>
+		<hook>profile_updatesignature_start</hook>
+		<hook>profile_updatesignature_complete</hook>
+		<hook>profile_editsignature_start</hook>
+		<hook>profile_editavatar_start</hook>
+		<hook>profile_editavatar_bit</hook>
+		<hook>profile_editprofilepic</hook>
+		<hook>profile_updateavatar_start</hook>
+		<hook>profile_updateavatar_complete</hook>
+		<hook>profile_updateprofilepic_start</hook>
+		<hook>profile_updateprofilepic_complete</hook>
+		<hook>profile_updatesigpic_start</hook>
+		<hook>profile_updatesigpic_complete</hook>
+		<hook>profile_updatedisplaygroup</hook>
+		<hook>profile_leavegroup</hook>
+		<hook>profile_insertjoinrequest</hook>
+		<hook>profile_joingroup_moderated</hook>
+		<hook>profile_joingroup_unmoderated</hook>
+		<hook>profile_editusergroups_start</hook>
+		<hook>profile_editusergroups_nonmemberbit</hook>
+		<hook>profile_editusergroups_memberbit</hook>
+		<hook>profile_editusergroups_displaybit</hook>
+		<hook>profile_deleteusergroups_start</hook>
+		<hook>profile_deleteusergroups_process</hook>
+		<hook>profile_deleteattachments_start</hook>
+		<hook>profile_deleteattachments_complete</hook>
+		<hook>profile_editattachments_start</hook>
+		<hook>profile_editattachments_complete</hook>
+		<hook>profile_docustomize_start</hook>
+		<hook>profile_docustomize_process</hook>
+		<hook>profile_customize_start</hook>
+		<hook>profile_customize_bit</hook>
+		<hook>profile_complete</hook>
+	</hooktype>
+
+	<hooktype type="register">
+		<hook>register_start</hook>
+		<hook>register_checkdate</hook>
+		<hook>register_signup</hook>
+		<hook>register_addmember_process</hook>
+		<hook>register_addmember_complete</hook>
+		<hook>register_form_start</hook>
+		<hook>register_form_complete</hook>
+		<hook>register_activateform</hook>
+		<hook>register_activate_start</hook>
+		<hook>register_activate_process</hook>
+		<hook>register_requestemail</hook>
+		<hook>register_emailcode_user</hook>
+		<hook>register_coppaform</hook>
+	</hooktype>
+
+	<hooktype type="report">
+		<hook>report_do_report</hook>
+		<hook>report_start</hook>
+		<hook>report_form_start</hook>
+		<hook>report_send_process</hook>
+		<hook>report_send_email</hook>
+		<hook>report_send_complete</hook>
+	</hooktype>
+
+	<hooktype type="reputation">
+		<hook>reputation_start</hook>
+		<hook>reputation_add_start</hook>
+		<hook>reputation_add_process</hook>
+		<hook>reputation_add_complete</hook>
+		<hook>reputation_viewown_start</hook>
+		<hook>reputation_viewown_bit</hook>
+		<hook>reputation_viewown_complete</hook>
+		<hook>reputation_form</hook>
+		<hook>reputation_power</hook>
+		<hook>reputation_image</hook>
+	</hooktype>
+
+	<hooktype type="rssfeeddata">
+		<hook>rssfeeddata_start</hook>
+		<hook>rssfeeddata_presave</hook>
+		<hook>rssfeeddata_postsave</hook>
+		<hook>rssfeeddata_delete</hook>
+	</hooktype>
+
+	<hooktype type="rssposter">
+		<hook>rssposter_parse_atom</hook>
+		<hook>rssposter_parse_rss</hook>
+	</hooktype>
+
+	<hooktype type="search">
+		<hook>search_start</hook>
+		<hook>search_intro</hook>
+		<hook>search_stopwords</hook>
+		<hook>search_before_process</hook>
+		<hook>search_process_start</hook>
+		<hook>search_results_postbit</hook>
+		<hook>search_results_threadbit</hook>
+		<hook>search_finduser_start</hook>
+		<hook>search_finduser_complete</hook>
+		<hook>search_doprefs_process</hook>
+		<hook>search_doprefs_complete</hook>
+		<hook>search_complete</hook>
+		<hook>search_similarthreads_fulltext</hook>
+	</hooktype>
+
+	<hooktype type="sendmessage">
+		<hook>sendmessage_start</hook>
+		<hook>sendmessage_im_start</hook>
+		<hook>sendmessage_im_complete</hook>
+		<hook>sendmessage_docontactus_start</hook>
+		<hook>sendmessage_docontactus_process</hook>
+		<hook>sendmessage_docontactus_complete</hook>
+		<hook>sendmessage_contactus_start</hook>
+		<hook>sendmessage_contactus_option</hook>
+		<hook>sendmessage_contactus_complete</hook>
+		<hook>sendmessage_sendtofriend_start</hook>
+		<hook>sendmessage_sendtofriend_complete</hook>
+		<hook>sendmessage_dosendtofriend_start</hook>
+		<hook>sendmessage_dosendtofriend_complete</hook>
+		<hook>sendmessage_mailmember</hook>
+		<hook>sendmessage_domailmember</hook>
+	</hooktype>
+
+	<hooktype type="socgroupdata">
+		<hook>socgroupdata_start</hook>
+		<hook>socgroupdata_presave</hook>
+		<hook>socgroupdata_postsave</hook>
+		<hook>socgroupdata_delete</hook>
+	</hooktype>
+
+	<hooktype type="socgroupcatdata">
+		<hook>socgroupcatdata_start</hook>
+		<hook>socgroupcatdata_presave</hook>
+		<hook>socgroupcatdata_postsave</hook>
+		<hook>socgroupcatdata_delete</hook>
+	</hooktype>
+
+	<hooktype type="socgroupmemberdata">
+		<hook>socgroupmemberdata_start</hook>
+		<hook>socgroupmemberdata_presave</hook>
+		<hook>socgroupmemberdata_postsave</hook>
+		<hook>socgroupmemberdata_delete</hook>
+	</hooktype>
+
+	<hooktype type="socgroupicondata">
+		<hook>socgroupicondata_start</hook>
+		<hook>socgroupicondata_presave</hook>
+		<hook>socgroupicondata_postsave</hook>
+		<hook>socgroupicondata_delete</hook>
+	</hooktype>
+
+	<hooktype type="showgroups">
+		<hook>showgroups_start</hook>
+		<hook>showgroups_user</hook>
+		<hook>showgroups_usergroup</hook>
+		<hook>showgroups_forum</hook>
+		<hook>showgroups_complete</hook>
+	</hooktype>
+
+	<hooktype type="showpost">
+		<hook>showpost_start</hook>
+		<hook>showpost_post</hook>
+		<hook>showpost_complete</hook>
+	</hooktype>
+
+	<hooktype type="showthread">
+		<hook>showthread_start</hook>
+		<hook>showthread_getinfo</hook>
+		<hook>showthread_poll_start</hook>
+		<hook>showthread_polloption</hook>
+		<hook>showthread_poll_complete</hook>
+		<hook>showthread_threaded_construct_link</hook>
+		<hook>showthread_post_start</hook>
+		<hook>showthread_query_postids</hook>
+		<hook>showthread_query_postids_threaded</hook>
+		<hook>showthread_query</hook>
+		<hook>showthread_postbit_create</hook>
+		<hook>showthread_loggedinuser</hook>
+		<hook>showthread_similarthread_query</hook>
+		<hook>showthread_similarthreadbit</hook>
+		<hook>showthread_bookmarkbit</hook>
+		<hook>showthread_complete</hook>
+	</hooktype>
+
+	<hooktype type="styleedit" admin="1">
+		<hook>stylevar_edit_sizes</hook>
+		<hook>stylevar_edit_imagepaths</hook>
+		<hook>stylevar_edit_misc</hook>
+		<hook>css_edit</hook>
+		<hook>css_output_build</hook>
+		<hook>css_output_build_end</hook>
+	</hooktype>
+
+	<hooktype type="stylevar">
+		<hook>stylevardata_start</hook>
+		<hook>stylevardfndata_delete</hook>
+		<hook>stylevardfndata_postsave</hook>
+		<hook>stylevardfndata_presave</hook>
+		<hook>stylevardfndata_start</hook>
+	</hooktype>
+
+	<hooktype type="tag">
+		<hook>tag_fetchbit</hook>
+		<hook>tag_fetchbit_complete</hook>
+		<hook>tag_cloud_bit</hook>
+		<hook>tags_start</hook>
+		<hook>tags_cloud_complete</hook>
+	</hooktype>
+
+	<hooktype type="threadbit">
+		<hook>threadbit_display</hook>
+		<hook>threadbit_process</hook>
+	</hooktype>
+
+	<hooktype type="threaddata">
+		<hook>threaddata_start</hook>
+		<hook>threaddata_presave</hook>
+		<hook>threaddata_postsave</hook>
+		<hook>threaddata_delete</hook>
+	</hooktype>
+
+	<hooktype type="threadfpdata">
+		<hook>threadfpdata_start</hook>
+		<hook>threadfpdata_doset</hook>
+		<hook>threadfpdata_presave</hook>
+		<hook>threadfpdata_postsave</hook>
+		<hook>threadfpdata_delete</hook>
+	</hooktype>
+
+	<hooktype type="threadmanage">
+		<hook>threadmanage_action_switch</hook>
+		<hook>threadmanage_start</hook>
+		<hook>threadmanage_openclose</hook>
+		<hook>threadmanage_getip</hook>
+		<hook>threadmanage_move_start</hook>
+		<hook>threadmanage_move_simple</hook>
+		<hook>threadmanage_move_redirect_orig</hook>
+		<hook>threadmanage_move_redirect_notice</hook>
+		<hook>threadmanage_move_copy_threadcopy</hook>
+		<hook>threadmanage_move_copy_postcopy</hook>
+		<hook>threadmanage_move_complete</hook>
+		<hook>threadmanage_update</hook>
+		<hook>threadmanage_merge_start</hook>
+		<hook>threadmanage_merge_complete</hook>
+		<hook>threadmanage_stickunstick</hook>
+		<hook>threadmanage_removeredirect</hook>
+		<hook>threadmanage_managepost</hook>
+		<hook>threadmanage_complete</hook>
+	</hooktype>
+
+	<hooktype type="threadrate">
+		<hook>threadrate_start</hook>
+		<hook>threadrate_update</hook>
+		<hook>threadrate_add</hook>
+	</hooktype>
+
+	<hooktype type="threadratedata">
+		<hook>threadratedata_start</hook>
+		<hook>threadratedata_presave</hook>
+		<hook>threadratedata_postsave</hook>
+		<hook>threadratedata_delete</hook>
+	</hooktype>
+
+	<hooktype type="threadtag">
+		<hook>threadtag_start</hook>
+		<hook>threadtag_domanage_delete</hook>
+		<hook>threadtag_domanage_postdelete</hook>
+		<hook>threadtag_managebit</hook>
+		<hook>threadtag_manage_tagsremain</hook>
+	</hooktype>
+
+	<hooktype type="useradmin" admin="1">
+		<hook>useradmin_edit_start</hook>
+		<hook>useradmin_edit_column1</hook>
+		<hook>useradmin_edit_column2</hook>
+		<hook>useradmin_update_choose</hook>
+		<hook>useradmin_update_save</hook>
+		<hook>useradmin_merge</hook>
+		<hook>useradmin_gethost</hook>
+		<hook>useradmin_prune</hook>
+	</hooktype>
+
+	<hooktype type="usercp">
+		<hook>usercp_start</hook>
+		<hook>usercp_nav_start</hook>
+		<hook>usercp_nav_complete</hook>
+		<hook>usercp_reputationbit</hook>
+		<hook>usercp_pmbit</hook>
+		<hook>usercp_threads_query</hook>
+		<hook>usercp_infractioninfobit</hook>
+		<hook>usercp_complete</hook>
+	</hooktype>
+
+	<hooktype type="usercss">
+		<hook>usercss_create</hook>
+		<hook>usercss_parse</hook>
+		<hook>usercss_build_property</hook>
+		<hook>usercss_build_css</hook>
+		<hook>usercss_build_display_array</hook>
+		<hook>usercss_build_css_array</hook>
+	</hooktype>
+
+	<hooktype type="userdata">
+		<hook>userdata_start</hook>
+		<hook>userdata_doset</hook>
+		<hook>userdata_presave</hook>
+		<hook>userdata_postsave</hook>
+		<hook>userdata_delete</hook>
+		<hook>userdata_update_username</hook>
+	</hooktype>
+
+	<hooktype type="usernote">
+		<hook>usernote_start</hook>
+		<hook>usernote_delete</hook>
+		<hook>usernote_edit</hook>
+		<hook>usernote_donote</hook>
+		<hook>usernote_newnote</hook>
+		<hook>usernote_viewuser_start</hook>
+		<hook>usernote_viewuser_query</hook>
+		<hook>usernote_viewuser_complete</hook>
+	</hooktype>
+
+	<hooktype type="userpicdata">
+		<hook>userpicdata_start</hook>
+		<hook>userpicdata_presave</hook>
+		<hook>userpicdata_postsave</hook>
+		<hook>userpicdata_delete</hook>
+	</hooktype>
+
+	<hooktype type="usersub">
+		<hook>usersub_start</hook>
+		<hook>usersub_doadd</hook>
+		<hook>usersub_add_start</hook>
+		<hook>usersub_add_complete</hook>
+		<hook>usersub_remove</hook>
+		<hook>usersub_view_start</hook>
+		<hook>usersub_view_sort</hook>
+		<hook>usersub_view_query_threadid</hook>
+		<hook>usersub_view_query</hook>
+		<hook>usersub_view_complete</hook>
+		<hook>usersub_movethread</hook>
+		<hook>usersub_manage_start</hook>
+		<hook>usersub_manage_delete</hook>
+		<hook>usersub_manage_move</hook>
+		<hook>usersub_manage_update</hook>
+		<hook>usersub_editfolders</hook>
+		<hook>usersub_doeditfolders</hook>
+	</hooktype>
+
+	<hooktype type="visitormessage">
+		<hook>visitor_message_start</hook>
+		<hook>visitor_message_post_start</hook>
+		<hook>visitor_message_post_ajax</hook>
+		<hook>visitor_message_post_complete</hook>
+		<hook>visitor_message_form_start</hook>
+		<hook>visitor_message_form_query</hook>
+		<hook>visitor_message_form_complete</hook>
+		<hook>visitor_message_getip</hook>
+		<hook>visitor_message_complete</hook>
+		<hook>visitor_messagebit_factory</hook>
+		<hook>visitor_messagebit_display_start</hook>
+		<hook>visitor_messagebit_display_complete</hook>
+		<hook>visitor_message_build_counters</hook>
+	</hooktype>
+
+	<hooktype type="visitormessagedata">
+		<hook>visitormessagedata_start</hook>
+		<hook>visitormessagedata_presave</hook>
+		<hook>visitormessagedata_postsave</hook>
+		<hook>visitormessagedata_delete</hook>
+	</hooktype>
+
+	<hooktype type="wysiwyg">
+		<hook>wysiwyg_parse_start</hook>
+		<hook>wysiwyg_parse_complete</hook>
+	</hooktype>
+
+	<hooktype type="sitemap">
+		<hook>sitemap_add_content_types</hook>
+	</hooktype>
+</hooks>
+
+<!-- CVS: $RCSfile$ - $Revision: 44911 $ -->

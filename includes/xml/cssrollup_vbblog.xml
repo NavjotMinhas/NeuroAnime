@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<css product="vbblog">
+	<rollup name="blog-rollup.css">
+		<template>postbit-lite.css</template>
+		<template>blog.css</template>
+		<template>lightbox.css</template>
+		<template>attachment.css</template>
+	</rollup>
+</css>

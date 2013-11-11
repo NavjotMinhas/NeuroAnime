@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<grids>
+	<grid name="1 Column + 240px sidebar" auxheader="0" auxfooter="0" addcolumn="1" addcolumnsnap="1" addcolumnsize="3" columns="1"><![CDATA[<div id="doc3" class="yui-tvb-r3">
+	<div id="bd">
+		<div id="yui-main">
+			<div class="yui-b">
+				<div class="yui-u yui-panel">
+					<ul class="list_no_decoration widget_list" id="widgetlist_column1">$column[1]</ul>
+				</div>
+			</div>
+		</div>
+		<div class="yui-b yui-sidebar">
+			<ul class="list_no_decoration widget_list" id="widgetlist_column2">$column[2]</ul>
+		</div>
+	</div>
+</div>
+]]></grid>
+	<grid name="2 Column (40%,60%)" auxheader="0" auxfooter="0" addcolumn="0" addcolumnsnap="0" addcolumnsize="1" columns="6"><![CDATA[<div id="doc3">
+	<div id="bd">
+		<div class="yui-g">
+			<div class="yui-tvb-l40 first yui-panel">
+				<ul class="list_no_decoration widget_list" id="widgetlist_column1">$column[1]</ul>
+			</div>
+			<div class="yui-tvb-r60 yui-panel">
+				<ul class="list_no_decoration widget_list" id="widgetlist_column2">$column[2]</ul>
+			</div>
+		</div>
+	</div>
+</div>
+]]></grid>
+	<grid name="2 Column (50%, 50%)" auxheader="0" auxfooter="0" addcolumn="0" addcolumnsnap="0" addcolumnsize="1" columns="2"><![CDATA[<div id="doc3">
+	<div id="bd">
+		<div class="yui-g">
+			<div class="yui-u first yui-panel">
+				<ul class="list_no_decoration widget_list" id="widgetlist_column1">$column[1]</ul>
+			</div>
+			<div class="yui-u yui-panel">
+				<ul class="list_no_decoration widget_list" id="widgetlist_column2">$column[2]</ul>
+			</div>
+		</div>
+	</div>
+</div>
+]]></grid>
+	<grid name="2 Column (60%, 40%)" auxheader="0" auxfooter="0" addcolumn="0" addcolumnsnap="0" addcolumnsize="1" columns="5"><![CDATA[<div id="doc3">
+	<div id="bd">
+		<div class="yui-g">
+			<div class="yui-tvb-l60 first yui-panel">
+				<ul class="list_no_decoration widget_list" id="widgetlist_column1">$column[1]</ul>
+			</div>
+			<div class="yui-tvb-r40 yui-panel">
+				<ul class="list_no_decoration widget_list" id="widgetlist_column2">$column[2]</ul>
+			</div>
+		</div>
+	</div>
+</div>
+]]></grid>
+	<grid name="2 Column + Sidebar (25%, 75%, 240px)" auxheader="0" auxfooter="0" addcolumn="1" addcolumnsnap="1" addcolumnsize="3" columns="8"><![CDATA[<div id="doc3" class="yui-tvb-r3">
+	<div id="bd">
+		<div id="yui-main">
+			<div class="yui-b">
+				<div class="yui-gf">
+					<div class="yui-u first yui-panel">
+						<ul class="list_no_decoration widget_list" id="widgetlist_column1">$column[1]</ul>
+					</div>
+					<div class="yui-u yui-panel">
+						<ul class="list_no_decoration widget_list" id="widgetlist_column2">$column[2]</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="yui-b yui-sidebar">
+			<ul class="list_no_decoration widget_list" id="widgetlist_column3">$column[3]</ul>
+		</div>
+	</div>
+</div>
+]]></grid>
+	<grid name="2 Column + Sidebar (33%, 66%, 300px)" auxheader="0" auxfooter="0" addcolumn="1" addcolumnsnap="1" addcolumnsize="4" columns="4"><![CDATA[<div id="doc3" class="yui-tvb-r4">
+	<div id="bd">
+		<div id="yui-main">
+			<div class="yui-b">
+				<div class="yui-gd">
+					<div class="yui-u first yui-panel">
+						<ul class="list_no_decoration widget_list" id="widgetlist_column1">$column[1]</ul>
+					</div>
+					<div class="yui-u yui-panel">
+						<ul class="list_no_decoration widget_list" id="widgetlist_column2">$column[2]</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="yui-b yui-sidebar">
+			<ul class="list_no_decoration widget_list" id="widgetlist_column3">$column[3]</ul>
+		</div>
+	</div>
+</div>
+]]></grid>
+	<grid name="2 Column + Sidebar (33%,66%, 240px)" auxheader="0" auxfooter="0" addcolumn="1" addcolumnsnap="1" addcolumnsize="3" columns="4"><![CDATA[<div id="doc3" class="yui-tvb-r3">
+	<div id="bd">
+		<div id="yui-main">
+			<div class="yui-b">
+				<div class="yui-gd">
+					<div class="yui-u first yui-panel">
+						<ul class="list_no_decoration widget_list" id="widgetlist_column1">$column[1]</ul>
+					</div>
+					<div class="yui-u yui-panel">
+						<ul class="list_no_decoration widget_list" id="widgetlist_column2">$column[2]</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="yui-b yui-sidebar">
+			<ul class="list_no_decoration widget_list" id="widgetlist_column3">$column[3]</ul>
+		</div>
+	</div>
+</div>
+]]></grid>
+	<grid name="3 Column (25%, 50%, 25%)" auxheader="0" auxfooter="0" addcolumn="0" addcolumnsnap="0" addcolumnsize="1" columns="12"><![CDATA[<div id="doc3">
+	<div id="bd">
+		<div class="yui-g">
+			<div class="yui-tvb-l25 first yui-panel">
+				<ul class="list_no_decoration widget_list" id="widgetlist_column1">$column[1]</ul>
+			</div>
+			<div class="yui-tvb-l50 first yui-panel">
+				<ul class="list_no_decoration widget_list" id="widgetlist_column2">$column[2]</ul>
+			</div>
+			<div class="yui-tvb-l25 first yui-panel">
+				<ul class="list_no_decoration widget_list" id="widgetlist_column3">$column[3]</ul>
+			</div>
+		</div>
+	</div>
+</div>
+]]></grid>
+	<grid name="3 Column (50%, 25%, 25%)" auxheader="0" auxfooter="0" addcolumn="0" addcolumnsnap="0" addcolumnsize="1" columns="10"><![CDATA[<div id="doc3">
+	<div id="bd">
+		<div class="yui-g">
+			<div class="yui-g">
+				<div class="yui-u first yui-panel">
+					<ul class="list_no_decoration widget_list" id="widgetlist_column2">$column[2]</ul>
+				</div>
+				<div class="yui-u yui-panel">
+					<ul class="list_no_decoration widget_list" id="widgetlist_column3">$column[3]</ul>
+				</div>
+			</div>
+			<div class="yui-u yui-panel">
+				<ul class="list_no_decoration widget_list" id="widgetlist_column1">$column[1]</ul>
+			</div>
+		</div>
+	</div>
+</div>
+]]></grid>
+</grids>

@@ -1,0 +1,181 @@
+@charset "utf-8";
+body {
+	font-family: sans-serif;
+	font-size: 62.5%;
+	color: #FFF;
+}
+body {
+	background-color: #444444;
+	background-image: url(../../images/backgrounsetc-starfield-4.jpg);
+	background-repeat: repeat;
+}
+a {
+	font-family: Calibri;
+	font-size: 1.4em;
+	color: #999;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #999;
+}
+a:hover {
+	text-decoration: none;
+	color: #FFF;
+}
+a:active {
+	text-decoration: none;
+	color: #FFF;
+}
+h1 {
+	font-size: 1.4em;
+	color: #FFF;
+}
+div#main {
+	background-color: #111111;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	width: 960px;
+	border: solid #484848 1px;
+}
+div#header {
+	background-color: #2a2828;
+	background-image: url(../../images/gradient.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	height: 134px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-right: 15px;
+	padding-left: 30px;
+	border-color: #484848;
+	border-style: solid;
+	border-width: 1px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+div#login {
+	width: 240px;
+	height: 134px;
+	float: right;
+	margin-right: 20px;
+	font-family: Calibri;
+	font-size: 1.5em;
+	color: #999999;
+	background-repeat: repeat-x;
+	background-color: #484848;
+}
+div#welcome {
+	font-family: Calibri;
+	font-size: 1.7em;
+	color: #FFF;
+	border-bottom-color: #FFF;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	width: 70%;
+	margin-top: 30px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: 400;
+	padding-left: 5px;
+}
+ul#navigation {
+	height:36px;
+	list-style-type: none;
+	background-color:#303030;
+	background-image: url(../../images/menu_gradient.png);
+	background-repeat: repeat-x;
+	background-position: right top;
+	margin: 0px;
+	padding-left:20px;
+	border-color: #111111;
+	border-style: solid;
+	border-width: 1px;
+}
+#navigation li {
+	float:left;
+}
+a.navigationButton {
+	display:block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.8em;
+	font-weight: lighter;
+	color: #FFF;
+	text-shadow: #242424 1px 1px 1px;
+	width: auto;
+	height: 22px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 10px;
+	padding-top: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	margin-top: 3px;
+}
+a.navigationButton:link {
+	color: #FFF;
+}
+a.navigationButton:visited {
+	color: #FFF;
+}
+a.navigationButton:hover {
+	color: #999999;
+}
+a.navigationButton:active {
+	color: #999999;
+}
+a.selectedNavigationButton {
+	background-color: #111111;
+	border: solid #484848 1px;
+	border-bottom-width: 0px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	display:block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.8em;
+	font-weight: lighter;
+	color: #999999;
+	text-shadow: #242424 1px 1px 1px;
+	width: auto;
+	height: 22px;
+	margin-top: 3px;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+}
+div#footer {
+	width: 960px;
+	height: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+div#loginBlock {
+	font-family: Calibri;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 5px;
+}
+.chromelessButton {
+	background: none;
+	border:none;
+	padding:0px;
+	margin:1px;
+	color:inherit;
+}
+.chromelessButton:hover {
+	color:#777777;
+}
+img.clip {
+	border: solid #fff 1px;
+}

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<categories>
+	<category>
+		<name>Arts</name>
+		<sub>
+			<name>Design</name>
+			<name>Fashion &amp; Beauty</name>
+			<name>Food</name>
+			<name>Literature</name>
+			<name>Performing Arts</name>
+			<name>Visual Arts</name>
+		</sub>
+	</category>
+	<category>
+		<name>Business</name>
+		<sub>
+			<name>Business News</name>
+			<name>Careers</name>
+			<name>Investing</name>
+			<name>Management &amp; Marketing</name>
+			<name>Shopping</name>
+		</sub>
+	</category>
+	<category>
+		<name>Comedy</name>
+	</category>
+	<category>
+		<name>Education</name>
+		<sub>
+			<name>Education Technology</name>
+			<name>Higher Education</name>
+			<name>K-12</name>
+			<name>Language Courses</name>
+			<name>Training</name>
+		</sub>
+	</category>
+	<category>
+		<name>Games &amp; Hobbies</name>
+		<sub>
+			<name>Automotive</name>
+			<name>Aviation</name>
+			<name>Hobbies</name>
+			<name>Other Games</name>
+			<name>Video Games</name>
+		</sub>
+	</category>
+	<category>
+		<name>Government &amp; Organizations</name>
+		<sub>
+			<name>Local</name>
+			<name>National</name>
+			<name>Non-Profit</name>
+			<name>Regional</name>
+		</sub>
+	</category>
+	<category>
+		<name>Health</name>
+		<sub>
+			<name>Alternative Health</name>
+			<name>Fitness &amp; Nutrition</name>
+			<name>Self-Help</name>
+			<name>Sexuality</name>
+		</sub>
+	</category>
+	<category>
+		<name>Kids &amp; Family</name>
+	</category>
+	<category>
+		<name>Music</name>
+	</category>
+	<category>
+		<name>News &amp; Politics</name>
+	</category>
+	<category>
+		<name>Religion &amp; Spirituality</name>
+		<sub>
+			<name>Buddhism</name>
+			<name>Christianity</name>
+			<name>Hinduism</name>
+			<name>Islam</name>
+			<name>Judaism</name>
+			<name>Other</name>
+			<name>Spirituality</name>
+		</sub>
+	</category>
+	<category>
+		<name>Science &amp; Medicine</name>
+		<sub>
+			<name>Medicine</name>
+			<name>Natural Scienes</name>
+			<name>Social Sciences</name>
+		</sub>
+	</category>
+	<category>
+		<name>Society &amp; Culture</name>
+		<sub>
+			<name>History</name>
+			<name>Personal Journals</name>
+			<name>Philosophy</name>
+			<name>Places &amp; Travel</name>
+		</sub>
+	</category>
+	<category>
+	<name>Sports &amp; Recreation</name>
+	<sub>
+		<name>Amateur</name>
+		<name>College &amp; High School</name>
+		<name>Outdoor</name>
+		<name>Professional</name>
+	</sub>
+	</category>
+	<category>
+		<name>Technology</name>
+		<sub>
+			<name>Gadgets</name>
+			<name>IT News</name>
+			<name>Podcasting</name>
+			<name>Software How-To</name>
+		</sub>
+	</category>
+	<category>
+		<name>TV &amp; Film</name>
+	</category>
+</categories>
+
+<!-- CVS: $RCSfile$ - $Revision: 16711 $ -->

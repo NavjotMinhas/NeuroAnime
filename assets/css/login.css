@@ -1,0 +1,40 @@
+input.inputField {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin-top: 5px;
+	background-color: #fafade;
+	border-style: solid;
+	border-color: #074b4b;
+	border-width: 1px;
+	float:right;
+}
+input.loginButton {
+	background-image:url('../../images/button_gradient.png');
+	border-style: solid;
+	border-color: #000;
+	border-width: 1px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	color:#fff;
+	float: right;
+	margin:0;
+	padding-left:15px;
+	padding-right:15px;
+	text-shadow: #242424 1px 1px 1px;
+}
+input.loginButton:hover {
+	background-image:url('../../images/rollover_button_gradient.png');
+}
+form#loginForm {
+	color:#fff;
+	font-size:14px;
+	font-family: Calibri;
+	font-weight:700;
+	margin-top: 30px;
+	width: 233px;
+	text-align: left;
+	vertical-align:middle;
+}
+div.loginSubBlock {
+	margin-top: 10px;
+}

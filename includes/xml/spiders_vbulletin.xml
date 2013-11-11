@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<searchspiders>
+	<spider ident="http://www.almaden.ibm.com/cs/crawler">
+		<name>Almaden Crawler</name>
+		<info>http://www.almaden.ibm.com/cs/crawler/</info>
+		<email>crawler@us.ibm.com</email>
+	</spider>
+	<spider ident="Ask Jeeves">
+		<name>AskJeeves</name>
+	</spider>
+	<spider ident="Googlebot">
+		<name>Google</name>
+	</spider>
+	<spider ident="Mediapartners-Google">
+		<name>Google AdSense</name>
+		<info>https://www.google.com/adsense/faq</info>
+		<email>adsense-support@google.com</email>
+	</spider>
+	<spider ident="slurp@inktomi">
+		<name>Inktomi</name>
+	</spider>
+	<spider ident="Lycos">
+		<name>Lycos</name>
+	</spider>
+	<spider ident="BingBot">
+		<name>BingBot</name>
+	</spider>
+	<spider ident="NPBot">
+		<name>NameProtect</name>
+	</spider>
+	<spider ident="turnitinbot">
+		<name>Turnitin.com</name>
+	</spider>
+	<spider ident="Yahoo! Slurp">
+		<name>Yahoo! Slurp</name>
+	</spider>
+	<spider ident="scooter">
+		<name>AltaVista</name>
+	</spider>
+	<spider ident="Baiduspider">
+		<name>Baidu</name>
+		<info>http://www.baidu.jp/spider/</info>
+    </spider>
+</searchspiders>
+
+<!-- CVS: $RCSfile$ - $Revision: 44825 $ -->

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<css product="vbulletin">
+	<rollup name="main-rollup.css">
+		<template>bbcode.css</template>
+		<template>editor.css</template>
+		<template>popupmenu.css</template>
+		<template>reset-fonts.css</template>
+		<template>vbulletin.css</template>
+		<template>vbulletin-chrome.css</template>
+		<template>vbulletin-formcontrols.css</template>
+	</rollup>
+	<rollup name="album-rollup.css">
+		<template>album.css</template>
+		<template>picture.css</template>
+		<template>postbit-lite.css</template>
+	</rollup>
+	<rollup name="forumdisplay-rollup.css">
+		<template>toolsmenu.css</template>
+		<template>forumbits.css</template>
+		<template>forumdisplay.css</template>
+		<template>threadlist.css</template>
+		<template>options.css</template>
+	</rollup>
+	<rollup name="forumhome-rollup.css">
+		<template>forumbits.css</template>
+		<template>forumhome.css</template>
+		<template>widgets.css</template>
+		<template>sidebar.css</template>
+		<template>options.css</template>
+		<template>tagcloud.css</template>
+	</rollup>
+	<rollup name="memberinfo-rollup.css">
+		<template>sidebar.css</template>
+		<template>forumbits.css</template>
+		<template>postbit.css</template>
+		<template>postbit-lite.css</template>
+		<template>member.css</template>
+		<template>showthread.css</template>
+	</rollup>
+	<rollup name="postbit-rollup.css">
+		<template>postbit.css</template>
+		<template>postbit-lite.css</template>
+		<template>postlist.css</template>
+	</rollup>
+	<rollup name="showthread-rollup.css">
+		<template>toolsmenu.css</template>
+		<template>attachment.css</template>
+		<template>lightbox.css</template>
+		<template>poll.css</template>
+		<template>postbit.css</template>
+		<template>postlist.css</template>
+		<template>options.css</template>
+		<template>showthread.css</template>
+	</rollup>
+	<rollup name="search-rollup.css">
+		<template>forumbits.css</template>
+		<template>postbit.css</template>
+		<template>postbit-lite.css</template>
+		<template>threadlist.css</template>
+		<template>search.css</template>
+	</rollup>
+	<rollup name="socialgroups-rollup.css">
+		<template>album.css</template>
+		<template>friends.css</template>
+		<template>member.css</template>
+		<template>picture.css</template>
+		<template>socialgroups.css</template>
+		<template>threadlist.css</template>
+		<template>toolsmenu.css</template>
+		<template>sidebar.css</template>
+	</rollup>
+	<rollup name="usercp-rollup.css">
+		<template>attachments.css</template>
+		<template>forumbits.css</template>
+		<template>forumdisplay.css</template>
+		<template>postlist.css</template>
+		<template>threadlist.css</template>
+		<template>usercp.css</template>
+	</rollup>
+</css>

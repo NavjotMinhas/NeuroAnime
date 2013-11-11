@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<navgroups product="skimlinks">
+
+	<navgroup phrase="advertising" permissions="canadminads" displayorder="19">	
+
+		<navoption displayorder="50">
+			<phrase>skimlinks_global_options</phrase>
+			<link>skimlinks.php?do=global</link>
+		</navoption>
+
+		<navoption displayorder="60">
+			<phrase>skimlinks_advanced_options</phrase>
+			<link>skimlinks.php?do=advanced</link>
+		</navoption>
+
+	</navgroup>
+</navgroups>
