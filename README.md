@@ -7,6 +7,8 @@ NeuroAnime
 
 <p>The template also includes a custom admin page that allows other administrators to add/ delete other anime shows, episodes or links</p>
 
+<p><strong>All administrators are assigned through the VBulletin membership service</strong></p>
+
 <p>This template is created in :</p>
 <ul>
   <li>PHP</li>
