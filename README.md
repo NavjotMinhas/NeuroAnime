@@ -16,3 +16,6 @@ NeuroAnime
   <li>HTML</li>
   <li>CSS</li>
 </ul>
+
+<img src="http://i189.photobucket.com/albums/z183/Navthwarrior/screenie-1.png" />
+<img src="http://i189.photobucket.com/albums/z183/Navthwarrior/neuroanime.png" />
